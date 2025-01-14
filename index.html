@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+      />
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pattaya&display=swap" rel="stylesheet"/>
+ </head>
+  <body>
+    <!-- Верхній темний сектор -->
+    <header class="header">
+      <div class="container">
+        <img
+          src="/images/Neuropsychologist & Trauma Therapist.svg"
+          alt="Логотип Kira Ivlieva"
+          class="logo"
+        />
+        <h1 class="header-title">7-ДЕННИЙ ON-LINE КУРС</h1>
+      </div>
+    </header>
+
+    <!-- Перша сторінка з фото на фоні -->
+ <section id="background-section">
+  <div class="content">
+    <h1 class="curs-name">ШЛЯХ ДО СПОКОЮ</h1>
+    <h2 class="curs-name-second">АБО ЯК ШВИДКО ПОЗБУТИСЯ ПАНІЧНИХ АТАК</h2>
+
+    
+    <div class="container-left">
+      <p class="text-standart-prise">Стандартна ціна 2990.00 ₴</p>
+      <p class="text-sale-prise">АКЦІЙНА ЦІНА</p>
+      <p class="sale-prise">299.00 ₴</p>
+      
+      <!-- Напівпрозора рамка з текстом і таймером -->
+      
+      </div>
+      
+     <div class="promotion-timer-box">
+        <p class="time-text">До кінця акції</p>
+        <div class="timer">
+          <span id="days">00</span> днів
+          <span id="hours">00</span> г:
+          <span id="minutes">00</span> хв:
+          <span id="seconds">00</span> сек
+        </div>
+        <a href="#" class="payment-button" target="_blank">ОТРИМАТИ ЗНИЖКУ В 90%</a> 
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    // Задаємо шлях до зображення
+    const backgroundImageUrl = 'images/kyb4Xbg3qkG_DWTYzcY_j.jpg';
+
+    // Отримуємо секцію за ID і встановлюємо фон
+    const section = document.getElementById('background-section');
+    section.style.backgroundImage = `url('${backgroundImageUrl}')`;
+  </script>
+</body>
+</html>
+
+<!-- друга секція ЩО ВИ ОТРИМАЄТЕ ВІД КУРСУ? -->
+
+<section class="course-section">
+  <h2>ЩО ВИ ОТРИМАЄТЕ ВІД КУРСУ?</h2>
+  <div class="course-benefits">
+    <div class="benefit">
+      <img src="/images/svg/white-lamp.svg" alt="Icon 1" class="benefit-icon">
+      <h3 class="benefit-title">Глибоке розуміння природи панічних атак:</h3>
+      <ul class="benefit-text">
+        <li>1. Ви дізнаєтеся, що таке панічна атака та як реагує організм на стрес.</li>
+        <li>2. Зрозумієте, як працюють тригери та фактори, що провокують панічні атаки.</li>
+        <li>3. Навчитеся розпізнавати тіло, емоції та думки, що сигналізують про початок панічного епізоду.</li>
+      </ul>
+    </div>
+    <div class="benefit">
+      <img src="/images/svg/practice.svg" alt="Icon 2" class="benefit-icon">
+      <h3 class="benefit-title">Практичні інструменти для подолання паніки:</h3>
+      <ul class="benefit-text">
+        <li>1. Опануєте дихальні техніки, що допомагають зняти стрес і повернути спокій.</li>
+        <li>2. Навчитеся практикам "Заземлення" та пошуку тригерів через тіло.</li>
+        <li>3. Виконаєте вправи на встановлення зв'язку з тілом, які допоможуть запобігти нападам.</li>
+        <li>4. Отримаєте алгоритми дій під час панічної атаки та медитації для відновлення балансу.</li>
+      </ul>
+    </div>
+    <div class="benefit">
+      <img src="/images/svg/hand-help.svg" alt="Icon 3" class="benefit-icon">
+      <h3 class="benefit-title">Підтримка та довгострокові результати:</h3>
+      <ul class="benefit-text">
+        <li>1. Ви отримаєте рекомендації для створення особистого плану подолання панічних атак.</li>
+        <li>2. Мотивуюча історія: досвід тренера.</li>
+        <li>3. Бонусні медитації для розвитку усвідомленості та збереження спокою у будь-яких ситуаціях.</li>
+      </ul>
+    </div>
+  </div>
+  <a href="#" class="payment-button-orange" target="_blank">ОТРИМАЙ ДОСТУП ДО КУРСУ</a>
+</section>
+
+<!--Третя Секція ПРО МЕНЕ -->
+
+<section class="about-me-section">
+  <div class="left-block-about-me">
+    <div class="text-frame-about-me">
+      <h3 class="h3-left-block-about-me">Вітаю! Я Кіра Івлєва - авторка курсу:</h3>
+      <h2 class="h2-left-block-about-me">ШЛЯХ ДО СПОКОЮ АБО ЯК ШВИДКО ПОЗБУТИСЯ ПАНІЧНИХ АТАК</h2>
+    </div>
+  </div>
+  <div class="right-block-about-me">
+    <h2 class="title-right-block-about-me">ПРО МЕНЕ</h2>
+    <ul>
+      <li>
+        <strong class="title-right-block">Освіта:</strong>
+        <ul class="text-right-block-about-me">
+          <li>Клінічний психолог;</li>
+          <li>Нейропсихолог;</li>
+          <li>Травматерапевт.</li>
+        </ul>
+      </li>
+      <li>
+        <strong class="title-right-block">Практична діяльність:</strong>
+        <ul class="text-right-block-about-me">
+          <li>Дитячий психолог, асистент невролога. Робота з дітьми з особливостями розвитку;</li>
+          <li>Дитячий нейропсихолог, приватна практика;</li>
+          <li>Травматерапевт, індивідуальна робота з дорослими;</li>
+          <li>Нейропсихолог, травматерапевт.</li>
+        </ul>
+      </li>
+      <li>
+        <strong class="title-right-block">Волонтерська діяльність:</strong>
+        <p class="text-right-block-about-me">Співзасновниця та Президентка фонду "Fundacja Feniks", основна діяльність якого, психологічна підтримка постраждалим від війни.</p>
+      </li>
+      <li>
+        <strong class="title-right-block">Особистий досвід:</strong>
+        <p class="text-right-block-about-me">Мала панічні атаки, яких позбулася.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Четверта секція ЦЕЙ КУРС ДЛЯ ВАС, ЯКЩО ВИ: -->
+
+<section class="course-section-cards">
+  <h2>ЦЕЙ КУРС ДЛЯ ВАС, ЯКЩО ВИ:</h2>
+  <div class="course-cards">
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/1.png" alt="Image 1" class="card-image">
+      <div class="card-text-left">
+        <h3>Втомилися від страху втратити контроль:</h3>
+        <p>Постійно боїтеся, що панічна атака може трапитися будь-де і будь-коли.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/2.png" alt="Image 2" class="card-image">
+      <div class="card-text-left">
+        <h3>Страждаєте від фізичного дискомфорту під час нападів:</h3>
+        <p>Задуха, серцебиття, запаморочення чи тремор, які заважають нормально жити.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/3.png" alt="Image 3" class="card-image">
+      <div class="card-text-right">
+        <h3>Відчуваєте соціальну ізоляцію:</h3>
+        <p>Уникаєте людей через сором або страх осуду під час нападу.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/4.png" alt="Image 4" class="card-image">
+      <div class="card-text-right">
+        <h3>Зазнаєте емоційної втоми:</h3>
+        <p>Постійна тривога та виснаження стали частиною вашого життя.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/5.png" alt="Image 5" class="card-image">
+      <div class="card-text-left">
+        <h3>Стикнулися з погіршенням якості життя:</h3>
+        <p>Панічні атаки заважають працювати, навчатися чи будувати стосунки.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/6.png" alt="Image 6" class="card-image">
+      <div class="card-text-left">
+        <h3>Не знаєте, як допомогти собі:</h3>
+        <p>Ви розгублені і шукаєте чіткий план дій, який дійсно працює.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/7.png" alt="Image 6" class="card-image">
+      <div class="card-text-right">
+        <h3>Не знаєте, як допомогти собі:</h3>
+        <p>Ви розгублені і шукаєте чіткий план дій, який дійсно працює.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-overlay"></div>
+      <img src="/images/1360/8.png" alt="Image 6" class="card-image">
+      <div class="card-text-right">
+        <h3>Не знаєте, як допомогти собі:</h3>
+        <p>Ви розгублені і шукаєте чіткий план дій, який дійсно працює.</p>
+      </div>
+    </div>
+  </div>
+  <div class="payment-button-blue-container">
+    <a href="#" class="payment-button-blue" target="_blank">ДОЛУЧИТИСЯ ДО КУРСУ</a>
+  </div>
+</section>
+
+<!-- пята секція ПЕРЕВАГИ КУРСУ -->
+
+<section class="course-advantages">
+<div class="block-course-advantages">
+    <div class="title-course-advantages">
+      <h2>ПЕРЕВАГИ КУРСУ</h3>
+      <ul class="text-course-advantages">
+          <li>Методики курсу дозволяють миттєво зупинити панічну атаку</li>
+          <li>Курс поєднує знання нейропсихології, травматерапії та полівагальної теорії для глибокого розуміння природи панічних атак і ефективного їх подолання</li>
+          <li>Всі техніки та вправи легко інтегруються у ваше повсякденне життя, забезпечуючи стабільний прогрес без зайвих витрат часу</li>
+          <li>Практичні вправи, аудіомедитації та релаксаційні практики, які ви не знайдете у вільному доступі</li>
+          <li>Усі матеріали курсу доступні 24/7, тож ви можете займатися тоді, коли вам зручно, і переглядати їх скільки завгодно разів</li>
+          <li>Курс спрямований не лише на тимчасове полегшення, а й на формування довготривалої стійкості до стресу та панічних атак</li>
+        </ul>
+        </div>
+   </div>
+   <a href="#" class="payment-button-orange" target="_blank">ОТРИМАТИ ДОСТУП ДО ТЕХНІК</a>
+</section>
+
+<!-- шоста секція Відгуки -->
+
+<section class="reviews-section">
+  <h2>ВІДГУКИ</h2>
+  <div class="reviews-container">
+    <div class="review-box blue">
+      <img src="/images/відгуки/Дизайн без назви (7).png" alt="Відгук 1">
+      <p>Дякую за можливість   вирішити свої проблеми, розібратися в причинах своїх панічних атак. Дякую за кваліфіковану допомогу.</p>
+      <p>Анна В.</p>
+    </div>
+    <div class="review-box gray">
+      <img src="/images/відгуки/Дизайн без назви (7).png" alt="Відгук 2">
+      <p>Цей курс дав мені можливість відчути проблему панічних атак, побачити якби з боку. Після проходження курсу настав спокій. Продовжую медитативні практики</p>
+      <p>Світлана А.</p>
+    </div>
+    <div class="review-box blue">
+      <img src="/images/відгуки/Дизайн без назви (7).png" alt="Відгук 3">
+      <p>Дуже крутий курс. Я пробувала багато методик і зверталася до декількох психологів, але цей курс дійсно комплексно вирішує проблему. Панічні атаки зникли!</p>
+      <p>Оксана Б.</p>
+    </div>
+    <div class="review-box gray">
+      <img src="/images/відгуки/Дизайн без назви (7).png" alt="Відгук 4">
+      <p>Я не очікувала, що за такі гроші можна отримати такий крутий продукт. Це просто подарунок якийсь! Дякую - мені допомогло.</p>
+      <p>Ірина В.</p>
+    </div>
+    <!-- <div class="review-box blue">
+      <img src="/images/відгуки/Дизайн без назви (7).png" alt="Відгук 5">
+      <p>Найскладніше для мене було відмовитись від алкоголю. Не думала, що це провокує панічні атаки. Тепер склала собі алгоритм дій, як навчили) Поки нових нападів не було</p>
+      <p>Анна В.</p>
+    </div> -->
+  </div>
+  <a href="#" class="payment-button-blue" target="_blank">ДОЛУЧИТИСЯ ДО КУРСУ</a>
+</section>
+
+<!-- сьома секція Питання та відповіді -->
+
+<section class="faq-section">
+  <div>
+   <h2>ЧАСТІ ЗАПИТАННЯ</h2>
+  </div>
+  
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">1. Як взяти участь у курсі?</button>
+      <div class="faq-answer">
+        <p>Щоб взяти участь у курсі, достатньо натиснути на цю кнопку та перейти до рнєстрації, потім перейти до безпечної форми оплати. Після цього ви отримаєте доступ до курсу на вашу електронну адресу.</p>
+      <a href="#" class="payment-button-orange" target="_blank">ДОЛУЧИТИСЯ ДО КУРСУ</a>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">2. Скільки часу потрібно на проходження курсу?</button>
+      <div class="faq-answer">
+        <p>Ми просимо не ділитися матеріалами з іншими, адже вони захищені авторським правом і призначені лише для особистого користування. Однак, ви можете запросити друзів приєднатися до курсу.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">3. Чи можу я ділитися матеріалами з іншими?</button>
+      <div class="faq-answer">
+        <p>Матеріали будуть доступні онлайн. Ви зможете проходити їх у зручний для вас час.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">4. Чи є обмеження за віком для учасників?</button>
+      <div class="faq-answer">
+        <p>Курс підходить для дорослих учасників будь-якого віку, починаючи з 18 років.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">5. Чи можу я отримати доступ до матеріалів після закінчення курсу?</button>
+      <div class="faq-answer">
+        <p>Так, всі матеріали залишаться доступними для вас протягом 6 місяців. Після цього за потреби ви зможете придбати продовження терміну користування за 30% від суми курсу ще на пів року.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">6. Чи можна пропустити заняття, якщо я не встигаю?</button>
+      <div class="faq-answer">
+        <p>Так, ви можете пропустити заняття і повернутися до нього пізніше. Матеріали залишаються доступними у вашому особистому кабінеті.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">7. Чи потрібні якісь спеціальні знання для участі у курсі?</button>
+      <div class="faq-answer">
+        <p>Ні, курс розроблений для новачків, і вам не потрібні попередні знання з психології.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">8. Яка тривалість одного уроку?</button>
+      <div class="faq-answer">
+        <p>Один урок зазвичай триває від 10 до 20 хвилин. Додаткові практики можуть зайняти до 30 хвилин.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">9.  Чи можна пройти курс на мобільному телефоні?</button>
+      <div class="faq-answer">
+        <p>Так, наш курс адаптований під мобільні пристрої, і ви можете навчатися з телефону або планшету.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">10.  Чи є технічна підтримка, якщо виникнуть проблеми з доступом?</button>
+      <div class="faq-answer">
+        <p>Так, у нас є служба технічної підтримки, яка завжди готова допомогти вам з будь-якими технічними питаннями.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">11.  Чи надаються додаткові матеріали після завершення курсу?</button>
+      <div class="faq-answer">
+        <p>Так, після завершення курсу ви отримаєте доступ до додаткових матеріалів та корисних ресурсів.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">12.  Чи можна перенести дату початку курсу?</button>
+      <div class="faq-answer">
+        <p>Ви можете почати курс у будь-який зручний для вас час, оскільки всі матеріали доступні онлайн впродовж 6 місяців.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">13.  Які методи використовуються в курсі?</button>
+      <div class="faq-answer">
+        <p>Ми використовуємо перевірені техніки подолання панічних атак, зокрема діафрагмальне дихання, візуалізацію, медитації та когнітивно-поведінкові вправи.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">14. Чи можу я передати доступ до курсу іншій людині?</button>
+      <div class="faq-answer">
+        <p>Доступ до курсу є особистим і не може бути переданий іншій особі. Однак, ви можете рекомендувати курс своїм друзям.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">15. Чи потрібні якісь інструменти для проходження курсу?</button>
+      <div class="faq-answer">
+        <p>Все, що вам потрібно — це пристрій з доступом до інтернету та зручне місце для практик.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- восьма секція Збір емейлів -->
+
+<section class="discount-section">
+  <h2>ПЕРЕЙТИ ДО ЗНИЖКИ</h2>
+  <form class="discount-form">
+    <div>
+<input type="text" placeholder="Enter your name" class="form-input">
+    <input type="email" placeholder="Enter email*" class="form-input">
+    </div>
+<a href="#" class="payment-button-orange" target="_blank">ЗНИЖКА 90%</a>
+  </form>
+</section>
+
+<!-- Остання секція Footer -->
+
+
+<footer class="footer">
+  <div class="footer-icons">
+    <a href="https://facebook.com" class="social-icon" target="_blank">
+      <img src="/images/svg/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://twitter.com" class="social-icon" target="_blank">
+      <img src="/images/svg/telegram.svg" alt="Twitter">
+    </a>
+    <a href="https://instagram.com" class="social-icon" target="_blank">
+      <img src="/images/svg/yoytube.svg" alt="Instagram">
+    </a>
+    <a href="https://linkedin.com" class="social-icon" target="_blank">
+      <img src="/images/svg/email.svg" alt="LinkedIn">
+    </a>
+  </div>
+</footer>
+
+    <script>
+      // Countdown Timer
+      const countdownDate = new Date("2025-01-10T23:59:00").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+
+        if (distance < 0) {
+          clearInterval(timerInterval);
+          document.getElementById("countdown").innerHTML =
+            "The course has started!";
+        }
+      }
+
+      const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
+    <script>
+   document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    faqItem.classList.toggle('open');
+  });
+});
+    </script>
+ 
+
+  </body>
+</html>
