@@ -604,7 +604,7 @@ body {
 
 .left-block-about-me {
   position: relative;
-  background-image: url("/images/DSC02404.JPG"); /* Заміни на шлях до зображення */
+  background-image: url("images/DSC02404.JPG"); /* Заміни на шлях до зображення */
   background-size: cover;
   background-position: center;
   width: 900px;
@@ -677,7 +677,7 @@ body {
 
   .left-block-about-me {
     position: relative;
-    background-image: url("/images/DSC02404.JPG"); /* Заміни на шлях до зображення */
+    background-image: url("images/DSC02404.JPG"); /* Заміни на шлях до зображення */
     background-size: cover;
     background-position: center;
     width: auto;
@@ -957,7 +957,7 @@ body {
 /* пята секція ПЕРЕВАГИ КУРСУ */
 
 .course-advantages {
-  background: url("/images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
+  background: url("images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
     center/cover;
   width: 100%;
   height: auto;
@@ -991,7 +991,7 @@ body {
 
 @media (max-width: 768px) {
   .course-advantages {
-    background: url("/images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
+    background: url("images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
       center/cover; /* Можна використовувати інше фонове зображення */
     padding-top: 30px; /* Зменшення відступів */
     padding-bottom: 30px;
@@ -1153,7 +1153,7 @@ body {
   background-color: #f4f4f4;
   padding: 0;
   text-align: center;
-  background: url(/images/capitale-di-rischio.jpg) no-repeat center center; /* Центрування зображення */
+  background: url(images/capitale-di-rischio.jpg) no-repeat center center; /* Центрування зображення */
   background-size: cover; /* Зображення заповнює весь блок */
   width: 100%; /* Ширина секції */
   height: auto; /* Висота секції, наприклад, висота екрану */
