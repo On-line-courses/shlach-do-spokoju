@@ -33,99 +33,63 @@ body {
   background-color: #333333; /* Темний фон */
   height: 140px; /* Висота секції */
   width: 100%;
+  position: relative; /* Для правильного позиціонування дочірніх елементів */
   display: flex;
-  align-items: center; /* Вирівнювання елементів по вертикалі */
-  justify-content: center; /* Центрування елементів по горизонталі */
-  position: relative;
-  z-index: 1;
+  align-items: center; /* Центрування по вертикалі */
+  justify-content: center; /* Центрування заголовка */
+  padding: 0 20px; /* Відступи з боків */
+  box-sizing: border-box;
 }
 
+.logo {
+  position: absolute; /* Абсолютне позиціонування */
+  left: 20px; /* Відступ зліва */
+  top: 50%; /* Вирівнювання по центру */
+  transform: translateY(-50%); /* Щоб логотип був у вертикальному центрі */
+  width: 140px; /* Стандартний розмір логотипа */
+  height: auto; /* Автоматична висота */
+}
+
+.header-title {
+  font-size: 36px; /* Розмір шрифту */
+  font-weight: 400;
+  color: #ffffff; /* Білий колір тексту */
+  margin-left: 160px; /* Відступ від логотипа (140px + 20px відступ) */
+  text-align: start; /* Центрування тексту */
+}
+
+/* Адаптивність для планшетів */
 @media (max-width: 768px) {
   .header {
     height: 100px;
   }
+
+  .logo {
+    width: 100px; /* Зменшений логотип */
+    left: 15px; /* Менший відступ зліва */
+  }
+
+  .header-title {
+    font-size: 24px; /* Зменшений заголовок */
+    margin-left: 120px; /* Відступ для логотипа меншого розміру */
+  }
 }
 
+/* Адаптивність для телефонів */
 @media (max-width: 480px) {
   .header {
-    height: 80px; /* Менша висота для маленьких екранів */
+    height: 80px;
   }
-}
 
-.container {
-  width: 100vw; /* Ширина на весь екран */
-  display: flex;
-  
-  justify-content: center; 
-  position: relative;
-  box-sizing: border-box; /* Враховувати padding у ширині */
-  margin: 0; /* Видаляємо зовнішні відступи */
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Зміна напрямку на вертикальний */
-
-    padding: 10px; /* Зменшення відступів */
-    width: 100vw; /* Переконаємося, що ширина залишається на весь екран */
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    flex-direction: column; /* Контент у вертикальний ряд */
-    padding: 5px; /* Зменшення внутрішніх відступів */
-    width: 100vw; /* Ширина на весь екран */
-  }
-}
-
-.logo {
-  max-width: 140px; /* Розмір логотипа */
-  height: auto;
-  position: absolute; /* Логотип не впливає на вирівнювання тексту */
-  left: 50px; /* Відступ логотипа зліва */
-}
-
-@media (max-width: 768px) {
   .logo {
-    max-width: 90px; /* Менший логотип для планшетів */
-    left: 12px;
-    height: auto;
-    position: absolute;
+    width: 80px; /* Ще менший логотип */
+    left: 10px; /* Менший відступ зліва */
   }
-}
 
-@media (max-width: 480px) {
-  .logo {
-    max-width: 50px; /* Ще менший логотип для маленьких екранів */
-    left: 12px;
-    height: auto;
-    position: absolute;
-  }
-}
-
-.header-title {
-  
-  text-align: end; /* Горизонтальне вирівнювання тексту */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  color: #ffffff;
-}
-
-/* Адаптивність */
-@media (max-width: 768px) {
   .header-title {
-    padding-right: 5px;
-    font-size: 14px; /* Менший текст */
-  }
-}
-
-@media (max-width: 480px) {
-  .header-title {
-    font-size: 14px; /* Зменшений заголовок */
-
-    padding-left: 90px;
+    font-size: 14px; /* Ще менший розмір тексту */
+    margin-left: 100px; /* Відступ для маленького логотипа */
+    text-align: start; /* Вирівнювання тексту по лівому краю */
   }
 }
 
@@ -134,7 +98,7 @@ body {
 /* Стилі для секції */
 #background-section {
   background: url("your-image.jpg") no-repeat center center/cover;
-  padding: 20px 300px 131px 300px;
+  padding-bottom: 40px;
 }
 
 .content {
@@ -151,10 +115,11 @@ body {
 .curs-name {
   color: #0866ff;
   font-family: "Pattaya";
-  font-size: 102px;
+  font-size: 54px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 30px;
   opacity: 0; /* Початкова прозорість */
   transform: translateY(20px); /* Початкове положення (знизу) */
   animation: fadeInUp 2s ease-out forwards; /* Анімація появи */
@@ -174,7 +139,7 @@ body {
 
 .curs-name-second {
   color: #ffffff;
-  font-size: 41px;
+  font-size: 28px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 37px;
@@ -184,19 +149,13 @@ body {
   animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite; /* Анімації */
 }
 
-@media (max-width: 480px) {
-  .curs-name-second {
-    font-size: 12px;
-  }
-}
-
 /* Анімація друку тексту */
 @keyframes typing {
   from {
-    min-width: 0;
+    width: 0;
   }
   to {
-    max-width: 100%; /* Текст повністю з'являється і залишається */
+    width: 100%; /* Текст повністю з'являється і залишається */
   }
 }
 
@@ -220,30 +179,32 @@ body {
 
 .text-standart-prise {
   color: #ffffff;
-  font-size: 41px;
+  font-size: 32px;
   text-align: left;
-
+  padding-left: 40px;
   margin-bottom: 0;
 }
 
 .text-sale-prise {
   color: #ffa500;
-  font-size: 69px;
+  font-size: 54px;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 40px;
 }
 
 .sale-prise {
-  font-size: 131px;
+  font-size: 102px;
   color: #ffa500;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 40px;
 }
 
 /* Стилі для напівпрозорої рамки з таймером */
@@ -252,11 +213,11 @@ body {
   background-color: rgba(185, 183, 183, 0.5); /* Напівпрозорий фон */
   border: 1px solid #ffffff; /* Біла рамка */
   color: #ffffff;
-  padding: 20px;
   border-radius: 5px;
-  max-width: 550px; /* Трохи зменшена ширина */
+  width: 550px; /* Трохи зменшена ширина */
   margin: 0 auto; /* Центрування таймера */
   text-align: center; /* Центрування тексту */
+  padding: 20px;
 }
 
 .time-text {
@@ -269,7 +230,7 @@ body {
 
 .timer {
   font-family: "Aldrich";
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin-bottom: 28px; /* Відступ між таймером і кнопкою */
@@ -302,16 +263,17 @@ body {
   /* Стилі для секції */
   #background-section {
     background: url("your-image.jpg") no-repeat center center/cover;
-    padding: 20px 79px 36px 79px;
+    padding-bottom: 30px;
   }
 
   .curs-name {
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 12px;
+    padding-top: 24px;
   }
 
   .curs-name-second {
-    font-size: 14px;
+    font-size: 16px;
 
     margin-bottom: 80px;
   }
@@ -325,38 +287,41 @@ body {
 
   .text-standart-prise {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 22px;
     text-align: left;
+    padding-left: 24px;
   }
 
   .text-sale-prise {
-    font-size: 51px;
+    font-size: 38px;
+    padding-left: 24px;
   }
 
   .sale-prise {
-    font-size: 96px;
+    font-size: 72px;
+    padding-left: 24px;
   }
 
   /* Стилі для напівпрозорої рамки з таймером */
   .promotion-timer-box {
-    padding: 21px auto;
-    max-width: 610px; /* Трохи зменшена ширина */
+    padding: 16px;
+    width: 420px; /* Трохи зменшена ширина */
   }
 
   .time-text {
-    font-size: 41px;
+    font-size: 36px;
   }
 
   .timer {
-    font-size: 41px;
+    font-size: 24px;
   }
 
   .payment-button {
     padding: 34px auto;
 
-    font-size: 31px;
+    font-size: 22px;
 
-    width: 510px; /* Ширина кнопки відповідає ширині таймера */
+    width: 340px; /* Ширина кнопки відповідає ширині таймера */
   }
 
   .payment-button:hover {
@@ -369,17 +334,17 @@ body {
 
   /* Стилі для секції */
   #background-section {
-    padding: 30px 15px;
+    padding-bottom: 20px;
   }
 
   .curs-name {
-    font-size: 24px;
+    font-size: 25px;
     margin-bottom: 14px;
+    padding-top: 20px;
   }
 
   .curs-name-second {
-    font-size: 11px;
-
+    font-size: 12px;
     margin-bottom: 37px;
   }
 
@@ -392,19 +357,23 @@ body {
 
   .text-standart-prise {
     font-size: 14px;
+    padding-left: 20px;
   }
 
   .text-sale-prise {
     font-size: 24px;
+    padding-left: 20px;
   }
 
   .sale-prise {
     font-size: 45px;
+    padding-left: 20px;
   }
 
   /* Стилі для напівпрозорої рамки з таймером */
   .promotion-timer-box {
-    max-width: 230px; /* Трохи зменшена ширина */
+    width: 230px; /* Трохи зменшена ширина */
+    padding: 10px;
   }
 
   .time-text {
@@ -413,7 +382,7 @@ body {
 
   .timer {
     font-size: 10px;
-    margin-bottom: 28px; /* Відступ між таймером і кнопкою */
+    margin-bottom: 16px; /* Відступ між таймером і кнопкою */
   }
 
   .payment-button {
@@ -448,14 +417,14 @@ body {
 
 .benefit {
   background-color: #d9d9d9;
-  max-width: 560px;
+  width: 560px;
   padding: 20px;
   text-align: center;
   border-radius: 5px;
 }
 
 .benefit-icon {
-  max-width: 150px;
+  width: 150px;
   height: auto;
   margin-top: 46px;
   margin-bottom: 44px;
@@ -472,7 +441,7 @@ body {
 .benefit-text {
   font-size: 25px;
   font-weight: 400; /* Regular */
-  max-width: 520px;
+  width: 520px;
   margin: 0 auto;
   list-style-type: none;
   padding-bottom: 40px;
@@ -520,12 +489,12 @@ body {
   }
 
   .benefit {
-    max-width: 210px;
+    width: 210px;
     padding: 15px;
   }
 
   .benefit-icon {
-    max-width: 100px;
+    width: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -537,13 +506,13 @@ body {
 
   .benefit-text {
     font-size: 16px;
-    max-width: 180px;
+    width: 180px;
     list-style-type: none;
     padding-bottom: 20px;
   }
 
   .payment-button-orange {
-    max-width: 300px;
+    width: 300px;
     font-size: 16px;
     margin-bottom: 0;
   }
@@ -564,7 +533,7 @@ body {
   }
 
   .benefit {
-    max-width: 320px;
+    width: 320px;
     margin-bottom: 20px;
     border-radius: 5px;
     text-align: center; /* Додаткове вирівнювання тексту всередині елемента */
@@ -572,7 +541,7 @@ body {
   }
 
   .benefit-icon {
-    max-width: 90px;
+    width: 90px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -584,13 +553,13 @@ body {
 
   .benefit-text {
     font-size: 18px;
-    max-width: 300px;
+    width: 300px;
     list-style-type: none;
     padding-bottom: 10px;
   }
 
   .payment-button-orange {
-    max-width: 240px;
+    width: 240px;
     height: 60px;
     font-size: 14px;
   }
@@ -796,7 +765,7 @@ body {
   text-align: left; /* Вирівнювання тексту по лівому краю */
   color: #ffffff; /* Колір тексту */
   z-index: 2; /* Щоб текст був поверх накладення */
-  max-width: 50%;
+  width: 50%;
 }
 
 .card-text-right {
@@ -806,7 +775,7 @@ body {
   text-align: right; /* Вирівнювання тексту по лівому краю */
   color: #ffffff; /* Колір тексту */
   z-index: 2; /* Щоб текст був поверх накладення */
-  max-width: 50%;
+  width: 50%;
 }
 
 .card-text-left h3 {
@@ -874,7 +843,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Чотири картки в ряд */
     gap: 20px;
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -901,7 +870,7 @@ body {
   .payment-button-blue {
     font-size: 16px;
 
-    max-width: 300px;
+    width: 300px;
     height: 100px;
   }
 }
@@ -922,7 +891,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Чотири картки в ряд */
     gap: 20px;
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -961,14 +930,14 @@ body {
 .course-advantages {
   background: url("images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
     center/cover;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .block-course-advantages {
-  max-width: 50%;
+  width: 50%;
   margin: 0 69px 0 auto; /* Відступ зверху 98px, праворуч 69px */
 }
 
@@ -1022,7 +991,7 @@ body {
 
   .block-course-advantages {
     margin: 0 20px 0 auto; /* Відступ зверху 98px, праворуч 69px */
-    max-width: 100%;
+    width: 100%;
   }
 
   .block-course-advantages h2 {
@@ -1067,7 +1036,7 @@ body {
 }
 
 .review-box img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1367,10 +1336,10 @@ body {
   }
 
   .footer-icons {
-    max-width: 200px; /* Ширина контейнера для іконок */
+    width: 200px; /* Ширина контейнера для іконок */
   }
 
   .social-icon img {
-    max-width: 40px; /* Розмір іконок */
+    width: 40px; /* Розмір іконок */
   }
 }
