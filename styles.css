@@ -46,7 +46,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .header {
     height: 80px; /* Менша висота для маленьких екранів */
   }
@@ -55,8 +55,8 @@ body {
 .container {
   width: 100vw; /* Ширина на весь екран */
   display: flex;
-  align-items: center; /* Центрування елементів по вертикалі */
-  justify-content: center; /* Центрування елементів по горизонталі */
+  
+  justify-content: center; 
   position: relative;
   box-sizing: border-box; /* Враховувати padding у ширині */
   margin: 0; /* Видаляємо зовнішні відступи */
@@ -65,13 +65,13 @@ body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column; /* Зміна напрямку на вертикальний */
-    align-items: center; /* Центрування по горизонталі */
+
     padding: 10px; /* Зменшення відступів */
     width: 100vw; /* Переконаємося, що ширина залишається на весь екран */
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .container {
     flex-direction: column; /* Контент у вертикальний ряд */
     padding: 5px; /* Зменшення внутрішніх відступів */
@@ -88,16 +88,16 @@ body {
 
 @media (max-width: 768px) {
   .logo {
-    max-width: 100px; /* Менший логотип для планшетів */
-    left: 22px;
+    max-width: 90px; /* Менший логотип для планшетів */
+    left: 12px;
     height: auto;
     position: absolute;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .logo {
-    max-width: 80px; /* Ще менший логотип для маленьких екранів */
+    max-width: 50px; /* Ще менший логотип для маленьких екранів */
     left: 12px;
     height: auto;
     position: absolute;
@@ -105,21 +105,23 @@ body {
 }
 
 .header-title {
-  text-align: center; /* Горизонтальне вирівнювання тексту */
+  
+  text-align: end; /* Горизонтальне вирівнювання тексту */
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 30px;
   color: #ffffff;
 }
 
 /* Адаптивність */
 @media (max-width: 768px) {
   .header-title {
-    font-size: 24px; /* Менший текст */
+    padding-right: 5px;
+    font-size: 14px; /* Менший текст */
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .header-title {
     font-size: 14px; /* Зменшений заголовок */
 
@@ -139,7 +141,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .content {
     justify-content: left;
     /* align-items: center; */
@@ -182,7 +184,7 @@ body {
   animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite; /* Анімації */
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .curs-name-second {
     font-size: 12px;
   }
@@ -304,12 +306,12 @@ body {
   }
 
   .curs-name {
-    font-size: 64px;
+    font-size: 24px;
     margin-bottom: 12px;
   }
 
   .curs-name-second {
-    font-size: 25.5px;
+    font-size: 14px;
 
     margin-bottom: 80px;
   }
@@ -362,7 +364,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   /* Перша сторінка з фото на фоні */
 
   /* Стилі для секції */
@@ -371,7 +373,7 @@ body {
   }
 
   .curs-name {
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 14px;
   }
 
@@ -547,7 +549,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .course-section {
     padding: 20px 0;
   }
@@ -694,7 +696,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .left-block-about-me {
     position: relative; /* Додано, щоб дочірній елемент позиціонувався відносно цього контейнера */
     width: 100%;
@@ -904,7 +906,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .course-section-cards {
     padding: 20px 20px;
   }
@@ -1012,7 +1014,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .course-advantages {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1117,7 +1119,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .reviews-section {
     margin: 20px auto 0 auto;
     padding-bottom: 20px;
@@ -1230,7 +1232,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .faq-section {
     padding: 20px;
   }
@@ -1310,7 +1312,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .discount-section {
     padding: 20px;
   }
@@ -1359,7 +1361,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .footer {
     height: 80px; /* Висота секції */
   }
