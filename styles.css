@@ -31,7 +31,7 @@ body {
 /* Верхній темний сектор */
 .header {
   background-color: #333333; /* Темний фон */
-  height: 140px; /* Висота секції */
+  height: 100px; /* Висота секції */
   width: 100%;
   position: relative; /* Для правильного позиціонування дочірніх елементів */
   display: flex;
@@ -46,12 +46,12 @@ body {
   left: 20px; /* Відступ зліва */
   top: 50%; /* Вирівнювання по центру */
   transform: translateY(-50%); /* Щоб логотип був у вертикальному центрі */
-  width: 140px; /* Стандартний розмір логотипа */
+  width: 100px; /* Стандартний розмір логотипа */
   height: auto; /* Автоматична висота */
 }
 
 .header-title {
-  font-size: 36px; /* Розмір шрифту */
+  font-size: 32px; /* Розмір шрифту */
   font-weight: 400;
   color: #ffffff; /* Білий колір тексту */
   margin-left: 160px; /* Відступ від логотипа (140px + 20px відступ) */
@@ -61,16 +61,16 @@ body {
 /* Адаптивність для планшетів */
 @media (max-width: 768px) {
   .header {
-    height: 100px;
+    height: 60px;
   }
 
   .logo {
-    width: 100px; /* Зменшений логотип */
+    width: 60px; /* Зменшений логотип */
     left: 15px; /* Менший відступ зліва */
   }
 
   .header-title {
-    font-size: 24px; /* Зменшений заголовок */
+    font-size: 18px; /* Зменшений заголовок */
     margin-left: 120px; /* Відступ для логотипа меншого розміру */
   }
 }
@@ -115,7 +115,7 @@ body {
 .curs-name {
   color: #0866ff;
   font-family: "Pattaya";
-  font-size: 54px;
+  font-size: 48px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
@@ -174,37 +174,37 @@ body {
   position: relative; /* Відносне позиціонування для контейнера */
   display: flex; /* Використовуємо Flexbox */
   flex-direction: column; /* Всі елементи будуть розташовані один під одним */
-  gap: 20px; /* Відступ між елементами, можна змінити за потребою */
+  /* Відступ між елементами, можна змінити за потребою */
 }
 
 .text-standart-prise {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 18px;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 80px;
   margin-bottom: 0;
 }
 
 .text-sale-prise {
   color: #ffa500;
-  font-size: 54px;
+  font-size: 31px;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .sale-prise {
-  font-size: 102px;
+  font-size: 58px;
   color: #ffa500;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 /* Стилі для напівпрозорої рамки з таймером */
@@ -222,18 +222,18 @@ body {
 
 .time-text {
   font-family: "Aldrich";
-  font-size: 38px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-top: 0;
 }
 
 .timer {
   font-family: "Aldrich";
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  margin-bottom: 28px; /* Відступ між таймером і кнопкою */
+  margin-bottom: 20px; /* Відступ між таймером і кнопкою */
 }
 
 .payment-button {
@@ -241,14 +241,14 @@ body {
   padding: 15px 0;
   background-color: #ffa500;
   color: #333333;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
-  width: 480px; /* Ширина кнопки відповідає ширині таймера */
+  width: 300px; /* Ширина кнопки відповідає ширині таймера */
   margin: 0 auto; /* Центрування кнопки */
   transition: background-color 0.3s;
 }
@@ -275,30 +275,30 @@ body {
   .curs-name-second {
     font-size: 16px;
 
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   /* !!!!!!!!!! */
   .container-left {
     position: relative; /* Відносне позиціонування для контейнера */
     display: flex; /* Використовуємо Flexbox */
     flex-direction: column; /* Всі елементи будуть розташовані один під одним */
-    gap: 20px; /* Відступ між елементами, можна змінити за потребою */
   }
 
   .text-standart-prise {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
     padding-left: 24px;
+    margin-top: 0;
   }
 
   .text-sale-prise {
-    font-size: 38px;
+    font-size: 31px;
     padding-left: 24px;
   }
 
   .sale-prise {
-    font-size: 72px;
+    font-size: 58px;
     padding-left: 24px;
   }
 
@@ -309,19 +309,17 @@ body {
   }
 
   .time-text {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .timer {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .payment-button {
     padding: 34px auto;
-
-    font-size: 22px;
-
-    width: 340px; /* Ширина кнопки відповідає ширині таймера */
+    font-size: 16px;
+    width: 260px; /* Ширина кнопки відповідає ширині таймера */
   }
 
   .payment-button:hover {
