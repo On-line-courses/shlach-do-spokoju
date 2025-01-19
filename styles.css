@@ -300,37 +300,37 @@ body {
 }
 
 @media (max-width: 1200px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 16px;
   }
 }
 
 @media (max-width: 992px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 15.5px;
   }
 }
 
 @media (max-width: 768px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 14.5px;
   }
 }
 
 @media (max-width: 576px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 13px;
   }
 }
 
 @media (max-width: 320px) {
-   .curs-name-second {
+  .curs-name-second {
     font-size: 12px;
   }
 }
@@ -344,32 +344,179 @@ body {
 
 .text-standart-prise {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 33px;
   text-align: left;
-  padding-left: 80px;
+  padding-left: 190px;
   margin-bottom: 0;
+}
+
+@media (max-width: 1440px) {
+  .text-standart-prise {
+    font-size: 29px;
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-standart-prise {
+    font-size: 21px;
+    padding-left: 170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-standart-prise {
+    font-size: 19px;
+    padding-left: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-standart-prise {
+    font-size: 17px;
+    padding-left: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-standart-prise {
+    font-size: 16px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-standart-prise {
+    font-size: 12px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-standart-prise {
+    font-size: 10px;
+    padding-left: 70px;
+  }
 }
 
 .text-sale-prise {
   color: #ffa500;
-  font-size: 31px;
+  font-size: 56px;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 80px;
+  padding-left: 190px;
+}
+
+@media (max-width: 1440px) {
+  .text-sale-prise {
+    font-size: 49px;
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text-sale-prise {
+    font-size: 35px;
+    padding-left: 170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-sale-prise {
+    font-size: 32px;
+    padding-left: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-sale-prise {
+    font-size: 29px;
+    padding-left: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-sale-prise {
+    font-size: 27px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-sale-prise {
+    font-size: 20px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-sale-prise {
+    font-size: 17px;
+    padding-left: 70px;
+  }
 }
 
 .sale-prise {
-  font-size: 58px;
+  font-size: 105px;
   color: #ffa500;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 80px;
+  padding-left: 190px;
+}
+
+@media (max-width: 1440px) {
+  .sale-prise {
+    font-size: 91px;
+    padding-left: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .sale-prise {
+    font-size: 66px;
+    padding-left: 170px;
+  }
+}
+
+@media (max-width: 992px) {
+    .sale-prise {
+    font-size: 60px;
+    padding-left: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+    .sale-prise {
+    font-size: 54px;
+    padding-left: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+    .sale-prise {
+    font-size: 50px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+    .sale-prise {
+    font-size: 38px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+    .sale-prise {
+    font-size: 32px;
+    padding-left: 70px;
+  }
 }
 
 /* Стилі для напівпрозорої рамки з таймером */
@@ -438,24 +585,6 @@ body {
     flex-direction: column; /* Всі елементи будуть розташовані один під одним */
   }
 
-  .text-standart-prise {
-    color: #ffffff;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 24px;
-    margin-top: 0;
-  }
-
-  .text-sale-prise {
-    font-size: 31px;
-    padding-left: 24px;
-  }
-
-  .sale-prise {
-    font-size: 58px;
-    padding-left: 24px;
-  }
-
   /* Стилі для напівпрозорої рамки з таймером */
   .promotion-timer-box {
     padding: 16px;
@@ -494,21 +623,6 @@ body {
     display: flex; /* Використовуємо Flexbox */
     flex-direction: column; /* Всі елементи будуть розташовані один під одним */
     gap: 20px; /* Відступ між елементами, можна змінити за потребою */
-  }
-
-  .text-standart-prise {
-    font-size: 14px;
-    padding-left: 20px;
-  }
-
-  .text-sale-prise {
-    font-size: 24px;
-    padding-left: 20px;
-  }
-
-  .sale-prise {
-    font-size: 45px;
-    padding-left: 20px;
   }
 
   /* Стилі для напівпрозорої рамки з таймером */
