@@ -218,9 +218,51 @@ body {
   }
 }
 
+@media (max-width: 1440px) {
+  .curs-name {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .curs-name {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 992px) {
+  .curs-name {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .curs-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .curs-name {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curs-name {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  .curs-name {
+    font-size: 34px;
+  }
+}
+
 .curs-name-second {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 18px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 37px;
@@ -248,6 +290,48 @@ body {
   }
   50% {
     border-color: #ffffff;
+  }
+}
+
+@media (max-width: 1440px) {
+  .curs-name-second {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+   .curs-name-second {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+   .curs-name-second {
+    font-size: 15.5px;
+  }
+}
+
+@media (max-width: 768px) {
+   .curs-name-second {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 576px) {
+   .curs-name-second {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+   .curs-name-second {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+   .curs-name-second {
+    font-size: 12px;
   }
 }
 
@@ -347,17 +431,6 @@ body {
     padding-bottom: 30px;
   }
 
-  .curs-name {
-    font-size: 36px;
-    margin-bottom: 12px;
-    padding-top: 24px;
-  }
-
-  .curs-name-second {
-    font-size: 16px;
-
-    margin-bottom: 40px;
-  }
   /* !!!!!!!!!! */
   .container-left {
     position: relative; /* Відносне позиціонування для контейнера */
@@ -414,17 +487,6 @@ body {
   /* Стилі для секції */
   #background-section {
     padding-bottom: 20px;
-  }
-
-  .curs-name {
-    font-size: 25px;
-    margin-bottom: 14px;
-    padding-top: 20px;
-  }
-
-  .curs-name-second {
-    font-size: 12px;
-    margin-bottom: 37px;
   }
 
   .container-left {
@@ -650,58 +712,53 @@ body {
 
 .about-me-section {
   display: flex;
-  justify-content: center; /* Центрування секції */
-  align-items: center; /* Вирівнювання по вертикалі */
+  justify-content: center;
   padding: 20px;
   background-color: #333333;
 }
 
 .about-me-card {
   display: flex;
-  flex-direction: column; /* Встановлюємо вертикальне розташування */
-  align-items: center; /* Центруємо контент по горизонталі */
-  border: 2px solid #ffffff; /* Білий контур картки */
-  border-radius: 10px; /* Закруглені краї картки */
-  padding: 40px;
-  background-color: #ffffff; /* Білий фон для картки */
-  width: 100%; /* Картка адаптується до ширини секції */
+  flex-direction: row; /* Розташування фото та тексту в один ряд */
+  align-items: flex-start;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  gap: 20px; /* Відстань між текстом і фото */
 }
 
 .about-me-photo {
-  width: 100%; /* Фото займає всю ширину картки */
-
-  border-radius: 4px; /* Закруглені краї фото */
-
-  height: auto; /* Збереження пропорцій */
+  width: 40%; /* Фото займає 40% ширини картки */
+  border-radius: 4px;
+  height: auto;
 }
 
 .about-me-content {
   display: flex;
-  flex-direction: column; /* Текст розташовується вертикально */
-  gap: 10px; /* Відступ між текстовими блоками */
-  text-align: left; /* Текст вирівняний по лівому краю */
-  width: 100%; /* Контент розтягується на ширину картки */
-  padding-top: 20px; /* Відступ між фото та текстом */
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  width: 60%; /* Контент займає 60% ширини картки */
 }
 
 .about-me-heading {
   font-size: 36px;
   color: #333333;
-  text-align: center;
   font-weight: 700;
 }
 
 .about-me-subtitle {
-  font-size: 36px;
+  font-size: 28px;
   margin-top: 20px;
-  text-align: center;
   color: #41496c;
   font-weight: 400;
 }
 
 .about-me-bold {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: #666666;
 }
 
@@ -709,7 +766,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 24px;
+  font-size: 18px;
   color: #666666;
 }
 
@@ -720,7 +777,7 @@ body {
 .about-me-paragraph {
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 18px;
   color: #666666;
 }
 
