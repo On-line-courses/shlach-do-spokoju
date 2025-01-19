@@ -13,7 +13,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #333333;
 }
 
 /* Нормалізуємо відступи для заголовків і тексту */
@@ -31,65 +31,146 @@ body {
 /* Верхній темний сектор */
 .header {
   background-color: #333333; /* Темний фон */
-  height: 100px; /* Висота секції */
+  height: 110px; /* Висота секції */
   width: 100%;
   position: relative; /* Для правильного позиціонування дочірніх елементів */
   display: flex;
   align-items: center; /* Центрування по вертикалі */
-  justify-content: center; /* Центрування заголовка */
-  padding: 0 20px; /* Відступи з боків */
+  padding: 0 190px; /* Відступи з боків */
   box-sizing: border-box;
 }
 
 .logo {
   position: absolute; /* Абсолютне позиціонування */
-  left: 20px; /* Відступ зліва */
+  left: 40px; /* Відступ зліва */
   top: 50%; /* Вирівнювання по центру */
   transform: translateY(-50%); /* Щоб логотип був у вертикальному центрі */
-  width: 100px; /* Стандартний розмір логотипа */
+  width: 110px; /* Стандартний розмір логотипа */
   height: auto; /* Автоматична висота */
 }
 
 .header-title {
-  font-size: 32px; /* Розмір шрифту */
+  font-size: 36px; /* Розмір шрифту */
   font-weight: 400;
   color: #ffffff; /* Білий колір тексту */
-  margin-left: 160px; /* Відступ від логотипа (140px + 20px відступ) */
   text-align: start; /* Центрування тексту */
 }
 
-/* Адаптивність для планшетів */
-@media (max-width: 768px) {
+/* Адаптація для максимальної якості і різних гаджетів */
+
+@media (max-width: 1440px) {
+  /* Стили для широких екранів */
   .header {
-    height: 60px;
+    height: 100px;
+    padding: 0 180px;
   }
 
   .logo {
-    width: 60px; /* Зменшений логотип */
-    left: 15px; /* Менший відступ зліва */
+    width: 100px; /* Зменшений логотип */
+  }
+
+  .header-title {
+    font-size: 30px; /* Зменшений заголовок */
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Стили для десктопів */
+  .header {
+    height: 90px;
+    padding: 0 170px;
+  }
+
+  .logo {
+    width: 90px; /* Зменшений логотип */
+  }
+
+  .header-title {
+    font-size: 22px; /* Зменшений заголовок */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Стили для планшетів у ландшафтній орієнтації */
+  .header {
+    height: 80px;
+    padding: 0 140px;
+  }
+
+  .logo {
+    width: 80px; /* Зменшений логотип */
+    left: 30px;
+  }
+
+  .header-title {
+    font-size: 20px; /* Зменшений заголовок */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Стили для планшетів у портретній орієнтації */
+  .header {
+    height: 70px;
+    padding: 0 130px;
+  }
+
+  .logo {
+    width: 70px; /* Зменшений логотип */
+    left: 30px;
   }
 
   .header-title {
     font-size: 18px; /* Зменшений заголовок */
-    margin-left: 120px; /* Відступ для логотипа меншого розміру */
   }
 }
 
-/* Адаптивність для телефонів */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+  /* Стили для середніх телефонів */
   .header {
-    height: 80px;
+    height: 60px;
+    padding: 0 100px;
   }
 
   .logo {
-    width: 80px; /* Ще менший логотип */
-    left: 10px; /* Менший відступ зліва */
+    width: 60px; /* Ще менший логотип */
+    left: 20px;
   }
 
   .header-title {
-    font-size: 14px; /* Ще менший розмір тексту */
-    margin-left: 100px; /* Відступ для маленького логотипа */
-    text-align: start; /* Вирівнювання тексту по лівому краю */
+    font-size: 16px; /* Ще менший розмір тексту */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 50px;
+    padding: 0 80px;
+  }
+
+  .logo {
+    width: 50px; /* Ще менший логотип */
+    left: 15px; /* Менший відступ зліва */
+  }
+
+  .header-title {
+    font-size: 12px; /* Ще менший розмір тексту */
+  }
+}
+
+@media (max-width: 320px) {
+  /* Стили для маленьких телефонів */
+  .header {
+    height: 40px;
+    padding: 0 70px;
+  }
+
+  .logo {
+    width: 40px; /* Зменшений логотип */
+    left: 15px; /* Менший відступ зліва */
+  }
+
+  .header-title {
+    font-size: 12px; /* Зменшений заголовок */
   }
 }
 
@@ -392,7 +473,6 @@ body {
 /* друга секція ЩО ВИ ОТРИМАЄТЕ ВІД КУРСУ? */
 
 .course-section {
-  background-color: #f4f4f4;
   text-align: center;
   padding: 40px 0;
   font-family: "Open Sans", sans-serif;
@@ -400,7 +480,7 @@ body {
 
 .course-section h2 {
   font-size: 36px;
-  color: #333333;
+  color: #ffffff;
   font-weight: 400; /* Regular */
   margin-bottom: 30px;
   margin-top: 0;
@@ -414,8 +494,8 @@ body {
 }
 
 .benefit {
-  background-color: #d9d9d9;
-  width: 220px;
+  background-color: #f4f4f4;
+  max-width: 430px;
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -427,7 +507,8 @@ body {
 }
 
 .benefit-title {
-  font-size: 16px;
+  font-size: 24px;
+  color: #333333;
   font-weight: 700; /* Bold */
   height: 50px;
   margin-bottom: 30px;
@@ -435,8 +516,9 @@ body {
 }
 
 .benefit-text {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400; /* Regular */
+  color: #41496c;
   margin: 0 auto;
   list-style-type: none;
   padding-bottom: 40px;
@@ -471,7 +553,6 @@ body {
 @media (max-width: 768px) {
   .course-section {
     padding: 20px auto;
-    
   }
 
   .course-section h2 {
@@ -483,9 +564,6 @@ body {
     gap: 20px;
     margin-bottom: 20px;
     display: inline-block;
-
-    
-  
   }
 
   .benefit {
@@ -508,7 +586,7 @@ body {
 
   .benefit-text {
     font-size: 14px;
-  text-align: left;
+    text-align: left;
     padding: 0 10px 20px 10px;
   }
 
@@ -523,7 +601,6 @@ body {
 @media (max-width: 480px) {
   .course-section {
     padding: 10px 0;
-    
   }
 
   .course-section h2 {
@@ -573,237 +650,141 @@ body {
 
 .about-me-section {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center; /* Центрування секції */
+  align-items: center; /* Вирівнювання по вертикалі */
+  padding: 20px;
+  background-color: #333333;
 }
 
-.left-block-about-me {
-  position: relative;
-  background-image: url("images/DSC02404.JPG"); /* Заміни на шлях до зображення */
-  background-size: cover;
-  background-position: center;
-  width: 900px;
-  height: 930px;
+.about-me-card {
+  display: flex;
+  flex-direction: column; /* Встановлюємо вертикальне розташування */
+  align-items: center; /* Центруємо контент по горизонталі */
+  border: 2px solid #ffffff; /* Білий контур картки */
+  border-radius: 10px; /* Закруглені краї картки */
+  padding: 40px;
+  background-color: #ffffff; /* Білий фон для картки */
+  width: 100%; /* Картка адаптується до ширини секції */
 }
 
-.text-frame-about-me {
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 700px;
-  background-color: #f4f4f4;
-  text-align: center;
-  padding-top: 32px;
-  box-sizing: border-box;
-  border-radius: 5px;
+.about-me-photo {
+  width: 100%; /* Фото займає всю ширину картки */
+
+  border-radius: 4px; /* Закруглені краї фото */
+
+  height: auto; /* Збереження пропорцій */
 }
 
-.h3-left-block-about-me {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 27px;
+.about-me-content {
+  display: flex;
+  flex-direction: column; /* Текст розташовується вертикально */
+  gap: 10px; /* Відступ між текстовими блоками */
+  text-align: left; /* Текст вирівняний по лівому краю */
+  width: 100%; /* Контент розтягується на ширину картки */
+  padding-top: 20px; /* Відступ між фото та текстом */
+}
+
+.about-me-heading {
+  font-size: 36px;
   color: #333333;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-me-subtitle {
+  font-size: 36px;
+  margin-top: 20px;
+  text-align: center;
+  color: #41496c;
+  font-weight: 400;
+}
+
+.about-me-bold {
+  font-weight: bold;
+  font-size: 24px;
+  color: #666666;
+}
+
+.about-me-list {
   margin: 0;
-}
-
-.h2-left-block-about-me {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 19px;
-  color: #333333;
-  margin: 12px 0 24px;
-}
-
-.right-block-about-me {
-  background-color: #0866ff;
-  color: #ffffff;
-  height: 930px;
-  width: calc(100% - 680px); /* Віднімаємо ширину лівого блоку */
-  padding: 64px;
-  box-sizing: border-box;
-}
-
-.title-right-block-about-me {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 56px;
-  font-weight: lighter;
-  text-align: center;
-  margin: 0 0 38px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.title-right-block {
-  font-size: 25px;
-}
-
-.text-right-block-about-me {
-  list-style: none;
   padding: 0;
-  margin-bottom: 24px;
-  font-size: 25px;
-  line-height: 1.6;
+  list-style: none;
+  font-size: 24px;
+  color: #666666;
+}
+
+.about-me-list li {
+  margin-bottom: 10px;
+}
+
+.about-me-paragraph {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #666666;
 }
 
 @media (max-width: 768px) {
-  .about-me-section {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+  .about-me-card {
+    padding: 10px; /* Менші відступи на мобільних */
   }
 
-  .left-block-about-me {
-    position: relative;
-    background-image: url("images/DSC02404.JPG"); /* Заміни на шлях до зображення */
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 930px;
-  }
-
-  .right-block-about-me {
-    background-color: #0866ff;
-    color: #ffffff;
-    height: auto;
-    width: auto;
-    padding: 64px;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 480px) {
-  .left-block-about-me {
-    position: relative; /* Додано, щоб дочірній елемент позиціонувався відносно цього контейнера */
-    width: 100%;
-    height: 500px;
-  }
-
-  .text-frame-about-me {
-    position: absolute;
-    width: 300px;
-    text-align: center; /* Текст по центру */
-    left: 50%; /* Центрування по горизонталі */
-    transform: translateX(-50%); /* Горизонтальне зміщення */
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .h3-left-block-about-me {
-    font-size: 18px;
-  }
-
-  .h2-left-block-about-me {
-    font-size: 12px;
-    margin-top: 12px;
-    margin-bottom: 0;
-  }
-
-  .right-block-about-me {
-    padding: 20px 25px;
-  }
-  .title-right-block-about-me {
-    font-size: 30px;
-
-    margin: 0 0 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .title-right-block {
-    font-size: 20px;
-  }
-
-  .text-right-block-about-me {
-    margin-bottom: 20px;
-    font-size: 18px;
+  .about-me-photo {
+    max-width: 100%; /* Фото займає всю ширину картки */
   }
 }
 
 /* четверта секція ЦЕЙ КУРС ДЛЯ ВАС, ЯКЩО ВИ:*/
 
 .course-section-cards {
-  text-align: center;
+  background-color: #333333; /* Background color for the section */
   padding: 40px 20px;
+  text-align: center;
 }
 
 .course-section-cards h2 {
-  font-size: 64px;
-  color: #333333;
-  font-weight: 400; /* Regular */
-  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .course-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Чотири картки в ряд */
-  gap: 20px;
-  max-width: 1760px;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  align-items: start;
 }
 
 .card {
-  position: relative;
+  background-color: #f4f4f4; /* Transparent to show section's bg */
+  border: 2px solid #ffffff; /* White border */
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 720px;
 }
 
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(51, 51, 51, 0.5); /* Напівпрозорий шар */
-  z-index: 1;
-}
-
-.card-text-left {
-  position: absolute;
-  top: 8px; /* Відступ зверху */
-  left: 8px; /* Відступ зліва */
-  text-align: left; /* Вирівнювання тексту по лівому краю */
-  color: #ffffff; /* Колір тексту */
-  z-index: 2; /* Щоб текст був поверх накладення */
-  width: 50%;
-}
-
-.card-text-right {
-  position: absolute;
-  top: 8px; /* Відступ зверху */
-  right: 8px; /* Відступ зліва */
-  text-align: right; /* Вирівнювання тексту по лівому краю */
-  color: #ffffff; /* Колір тексту */
-  z-index: 2; /* Щоб текст був поверх накладення */
-  width: 50%;
-}
-
-.card-text-left h3 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 20px;
-  margin-top: 8px;
+.card h3 {
+  font-size: 24px;
+  color: #41496c;
   margin-bottom: 10px;
 }
 
-.card-text-right h3 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 20px;
-  margin-top: 8px;
-  margin-bottom: 10px;
-}
-
-.card-text-left p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 20px;
-}
-
-.card-text-right p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 20px;
+.card p {
+  font-size: 24px;
+  color: #666666;
 }
 
 .payment-button-blue-container {
@@ -811,24 +792,25 @@ body {
 }
 
 .payment-button-blue {
-  display: inline-block;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  color: #ffffff;
-  background-color: #0866ff;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 30px 0;
-  width: 460px;
-  line-height: 40px; /* Для візуального центрування тексту */
+  width: 360px;
+  height: 100px;
+  display: inline-flex; /* Використовуємо flexbox для вирівнювання */
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
   text-align: center;
+  background-color: #0866ff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .payment-button-blue:hover {
-  background-color: #1008ff;
+  background-color: #004ecc;
 }
 
 @media (max-width: 768px) {
@@ -947,7 +929,7 @@ body {
 
 .block-course-advantages h2 {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: normal;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -958,10 +940,12 @@ body {
 
 .text-course-advantages {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: normal;
   color: #ffffff;
   text-align: left;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1017,9 +1001,9 @@ body {
 }
 
 .reviews-section h2 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: normal;
-  color: #333333;
+  color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 60px;
 }
@@ -1047,7 +1031,7 @@ body {
 }
 
 .review-box p {
-  font-size: 28px;
+  font-size: 24px;
   margin: 10px 0;
 }
 
@@ -1135,7 +1119,7 @@ body {
 }
 
 .faq-section h2 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 400;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -1159,7 +1143,7 @@ body {
 .faq-question {
   background-color: rgba(8, 102, 255, 0.3); /* Напівпрозорий синій */
   color: #ffffff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   padding: 20px;
   border: none;
@@ -1176,7 +1160,7 @@ body {
 .faq-answer {
   background-color: #ffffff;
   color: #333333;
-  font-size: 28px;
+  font-size: 24px;
   padding: 20px;
   display: none; /* Початково прихований */
 }
@@ -1229,7 +1213,7 @@ body {
 
 .discount-section {
   text-align: center;
-  background-color: #f7f7f7; /* Колір фону секції */
+  /* Колір фону секції */
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -1238,7 +1222,7 @@ body {
 
 .discount-section h2 {
   font-size: 36px;
-  color: #333333; /* Темний текст */
+  color: #ffffff; /* Темний текст */
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Тінь для тексту */
