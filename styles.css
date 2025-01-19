@@ -540,6 +540,55 @@ body {
   margin-top: 0;
 }
 
+@media (max-width: 1440px) {
+  .time-text {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+    .time-text {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 992px) {
+    .time-text {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .time-text {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 576px) {
+    .time-text {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+    .time-text {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 320px) {
+    .time-text {
+    font-size: 12px;
+  }
+}
+
+
 .timer {
   font-family: "Aldrich";
   font-size: 24px;
@@ -547,6 +596,55 @@ body {
   letter-spacing: 1.5px;
   margin-bottom: 20px; /* Відступ між таймером і кнопкою */
 }
+
+@media (max-width: 1440px) {
+  .timer {
+    font-size: 23px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+    .timer {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 992px) {
+    .timer {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .timer {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 576px) {
+    .timer {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+    .timer {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 320px) {
+    .timer {
+    font-size: 10px;
+  }
+}
+
 
 .payment-button {
   display: block;
@@ -591,13 +689,9 @@ body {
     width: 420px; /* Трохи зменшена ширина */
   }
 
-  .time-text {
-    font-size: 24px;
-  }
+ 
 
-  .timer {
-    font-size: 18px;
-  }
+
 
   .payment-button {
     padding: 34px auto;
@@ -631,14 +725,9 @@ body {
     padding: 10px;
   }
 
-  .time-text {
-    font-size: 14px;
-  }
 
-  .timer {
-    font-size: 10px;
-    margin-bottom: 16px; /* Відступ між таймером і кнопкою */
-  }
+
+
 
   .payment-button {
     font-size: 12px;
