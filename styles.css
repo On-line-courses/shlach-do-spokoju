@@ -184,6 +184,7 @@ body {
 
 .content {
   text-align: center;
+  padding-top: 30px;
 }
 
 @media (max-width: 480px) {
@@ -196,11 +197,10 @@ body {
 .curs-name {
   color: #0866ff;
   font-family: "Pattaya";
-  font-size: 48px;
+  font-size: 64px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
   opacity: 0; /* Початкова прозорість */
   transform: translateY(20px); /* Початкове положення (знизу) */
   animation: fadeInUp 2s ease-out forwards; /* Анімація появи */
@@ -220,49 +220,49 @@ body {
 
 @media (max-width: 1440px) {
   .curs-name {
-    font-size: 46px;
+    font-size: 60px;
   }
 }
 
 @media (max-width: 1200px) {
   .curs-name {
-    font-size: 44px;
+    font-size: 54px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name {
-    font-size: 42px;
+    font-size: 46px;
   }
 }
 
 @media (max-width: 768px) {
   .curs-name {
-    font-size: 40px;
+    font-size: 33px;
   }
 }
 
 @media (max-width: 576px) {
   .curs-name {
-    font-size: 38px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 480px) {
   .curs-name {
-    font-size: 36px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 320px) {
   .curs-name {
-    font-size: 34px;
+    font-size: 16px;
   }
 }
 
 .curs-name-second {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 40px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 37px;
@@ -295,43 +295,43 @@ body {
 
 @media (max-width: 1440px) {
   .curs-name-second {
-    font-size: 17px;
+    font-size: 38px;
   }
 }
 
 @media (max-width: 1200px) {
   .curs-name-second {
-    font-size: 16px;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name-second {
-    font-size: 15.5px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .curs-name-second {
-    font-size: 14.5px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 576px) {
   .curs-name-second {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
   .curs-name-second {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 320px) {
   .curs-name-second {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -1030,7 +1030,6 @@ body {
   .benefit-text {
     font-size: 18px;
     list-style-type: none;
-    
   }
 }
 
@@ -1038,7 +1037,6 @@ body {
   .benefit-text {
     font-size: 16px;
     list-style-type: none;
-    
   }
 }
 
@@ -1046,7 +1044,6 @@ body {
   .benefit-text {
     font-size: 14px;
     list-style-type: none;
-    
   }
 }
 
@@ -1054,7 +1051,6 @@ body {
   .benefit-text {
     font-size: 18px;
     list-style-type: none;
-   
   }
 }
 
@@ -1062,7 +1058,6 @@ body {
   .benefit-text {
     font-size: 14px;
     list-style-type: none;
-    
   }
 }
 
@@ -1070,7 +1065,6 @@ body {
   .benefit-text {
     font-size: 12px;
     list-style-type: none;
-   
   }
 }
 
@@ -1078,7 +1072,6 @@ body {
   .benefit-text {
     font-size: 10px;
     list-style-type: none;
-    
   }
 }
 
@@ -1174,6 +1167,7 @@ body {
   justify-content: center;
   padding: 0 20px 20px 20px;
   background-color: #333333;
+  width: 100%;
 }
 
 .about-me-card {
@@ -1184,35 +1178,97 @@ body {
   border-radius: 10px;
   padding: 20px;
   background-color: #ffffff;
-  max-width: 1200px;
   gap: 20px; /* Відстань між текстом і фото */
+  width: 100%;
+}
+
+.about-me-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо контент всередині контейнера */
+  width: 40%; /* Контейнер для фото займає 40% ширини картки */
+  gap: 15px; /* Відстань між фото та кнопкою */
 }
 
 .about-me-photo {
-  width: 40%; /* Фото займає 40% ширини картки */
+  width: 100%; /* Фото займає всю ширину контейнера */
   border-radius: 4px;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .about-me-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  text-align: left;
+  text-align: center;
   width: 60%; /* Контент займає 60% ширини картки */
 }
+
+
 
 .about-me-heading {
   font-size: 36px;
   color: #333333;
   font-weight: 700;
+  margin: 0;
 }
 
+@media (max-width: 1440px) {
+  .about-me-heading {
+  font-size: 34px;
+}
+}
+
+
+@media (max-width: 1200px) {
+    .about-me-heading {
+  font-size: 30px;
+}
+}
+
+
+@media (max-width: 992px) {
+    .about-me-heading {
+  font-size: 22px;
+}
+}
+
+
+@media (max-width: 768px) {
+    .about-me-heading {
+  font-size: 17px;
+}
+}
+
+
+@media (max-width: 576px) {
+    .about-me-heading {
+  font-size: 14px;
+}
+}
+
+
+@media (max-width: 480px) {
+    .about-me-heading {
+  font-size: 9px;
+}
+}
+
+
+@media (max-width: 320px) {
+    .about-me-heading {
+  font-size: 8px;
+}
+}
+
+
 .about-me-subtitle {
-  font-size: 28px;
-  margin-top: 20px;
+  font-size: 30px;
+  margin: 40px auto 20px;
   color: #41496c;
   font-weight: 400;
+  text-align: left;
 }
 
 .about-me-bold {
@@ -1229,8 +1285,10 @@ body {
   color: #666666;
 }
 
-.about-me-list li {
-  margin-bottom: 10px;
+.about-me-list li,
+ul {
+  margin: 0;
+  text-align: left;
 }
 
 .about-me-paragraph {
