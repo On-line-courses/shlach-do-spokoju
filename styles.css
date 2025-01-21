@@ -344,118 +344,118 @@ body {
 
 .text-standart-prise {
   color: #ffffff;
-  font-size: 33px;
+  font-size: 52px;
   text-align: left;
-  padding-left: 190px;
+  padding-left: 50px;
   margin-bottom: 0;
 }
 
 @media (max-width: 1440px) {
   .text-standart-prise {
-    font-size: 29px;
-    padding-left: 180px;
+    font-size: 42px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 1200px) {
   .text-standart-prise {
-    font-size: 21px;
-    padding-left: 170px;
+    font-size: 34px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .text-standart-prise {
-    font-size: 19px;
-    padding-left: 140px;
+    font-size: 28px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .text-standart-prise {
-    font-size: 17px;
-    padding-left: 130px;
+    font-size: 22px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .text-standart-prise {
-    font-size: 16px;
-    padding-left: 100px;
+    font-size: 18px;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .text-standart-prise {
-    font-size: 12px;
-    padding-left: 80px;
+    font-size: 14px;
+    padding-left: 20px;
   }
 }
 
 @media (max-width: 320px) {
   .text-standart-prise {
-    font-size: 10px;
-    padding-left: 70px;
+    font-size: 14px;
+    padding-left: 20px;
   }
 }
 
 .text-sale-prise {
   color: #ffa500;
-  font-size: 56px;
+  font-size: 89px;
   font-weight: bold;
   text-align: left;
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 190px;
+  padding-left: 50px;
 }
 
 @media (max-width: 1440px) {
   .text-sale-prise {
-    font-size: 49px;
-    padding-left: 180px;
+    font-size: 71px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 1200px) {
   .text-sale-prise {
-    font-size: 35px;
-    padding-left: 170px;
+    font-size: 57px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .text-sale-prise {
-    font-size: 32px;
-    padding-left: 140px;
+    font-size: 48px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .text-sale-prise {
-    font-size: 29px;
-    padding-left: 130px;
+    font-size: 37px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .text-sale-prise {
-    font-size: 27px;
-    padding-left: 100px;
+    font-size: 31px;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .text-sale-prise {
-    font-size: 20px;
-    padding-left: 80px;
+    font-size: 24px;
+    padding-left: 20px;
   }
 }
 
 @media (max-width: 320px) {
   .text-sale-prise {
-    font-size: 17px;
-    padding-left: 70px;
+    font-size: 24px;
+    padding-left: 20px;
   }
 }
 
@@ -467,55 +467,55 @@ body {
   -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 190px;
+  padding-left: 50px;
 }
 
 @media (max-width: 1440px) {
   .sale-prise {
     font-size: 91px;
-    padding-left: 180px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 1200px) {
   .sale-prise {
     font-size: 66px;
-    padding-left: 170px;
+    padding-left: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .sale-prise {
     font-size: 60px;
-    padding-left: 140px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .sale-prise {
     font-size: 54px;
-    padding-left: 130px;
+    padding-left: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .sale-prise {
     font-size: 50px;
-    padding-left: 100px;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .sale-prise {
     font-size: 38px;
-    padding-left: 80px;
+    padding-left: 20px;
   }
 }
 
 @media (max-width: 320px) {
   .sale-prise {
     font-size: 32px;
-    padding-left: 70px;
+    padding-left: 20px;
   }
 }
 
