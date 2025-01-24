@@ -1387,16 +1387,16 @@ body {
 
 .course-section-cards {
   background-color: #333333; /* Background color for the section */
-  padding: 40px 20px;
+  padding: 20px 20px 40px;
   text-align: center;
 }
 
 .course-section-cards h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .course-cards {
@@ -1406,6 +1406,15 @@ body {
   justify-content: center;
   align-items: start;
 }
+
+@media (max-width: 768px) {
+  .course-cards {
+    display: inline-block;
+    
+  }
+}
+
+
 
 .card {
   background-color: #f4f4f4; /* Transparent to show section's bg */
@@ -1417,6 +1426,51 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   height: 720px;
 }
+
+@media (max-width: 1440px) {
+  .card {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    height: 620px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    height: 580px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    
+    height: 100%;
+    margin-bottom: 20px;
+    
+  }
+}
+
+/* @media (max-width: 576px) {
+  .card {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    height: 500px;
+  }
+} */
 
 .card img {
   max-width: 100%;
@@ -1439,6 +1493,14 @@ body {
 .payment-button-blue-container {
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+.payment-button-blue-container {
+    margin-top: 20px;
+  } 
+}
+
+ 
 
 .payment-button-blue {
   display: flex;
@@ -1480,9 +1542,7 @@ body {
   }
 }
 
- 
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .course-section-cards {
     padding: 30px 20px;
   }
@@ -1497,7 +1557,7 @@ body {
   .course-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Чотири картки в ряд */
-    gap: 20px;
+/* gap: 20px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -1518,19 +1578,17 @@ body {
     font-size: 16px;
   }
 
-  .payment-button-blue-container {
-    margin-top: 30px;
-  }
+ 
 
-  /* .payment-button-blue {
+/* .payment-button-blue {
     font-size: 16px;
 
     width: 300px;
     height: 100px;
   } */
-}
+/* } */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .course-section-cards {
     padding: 20px 20px;
   }
@@ -1545,7 +1603,7 @@ body {
   .course-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Чотири картки в ряд */
-    gap: 20px;
+/* gap: 20px;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -1568,9 +1626,9 @@ body {
 
   .payment-button-blue-container {
     margin-top: 30px;
-  }
+  } */
 
-  /* .payment-button-blue {
+/* .payment-button-blue {
     font-size: 14px;
     width: 240px;
     height: 60px;
@@ -1578,7 +1636,6 @@ body {
     align-items: center;
     justify-content: center;
   } */
-}
 
 /* пята секція ПЕРЕВАГИ КУРСУ */
 
@@ -1772,7 +1829,7 @@ body {
   /* Центрування кнопки */
   /* .payment-button-blue {
     margin: 0 auto; /* Додаємо margin для центрування */
-  /* } */ 
+  /* } */
 }
 
 /* сьома секція часті запитання */
