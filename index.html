@@ -351,14 +351,34 @@
 
 <section class="discount-section">
   <h2>ПЕРЕЙТИ ДО ЗНИЖКИ</h2>
-  <form class="discount-form">
+  <form id="discount-form" class="discount-form">
     <div>
-<input type="text" placeholder="Enter your name" class="form-input">
-    <input type="email" placeholder="Enter email*" class="form-input">
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        class="form-input"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter email*"
+        class="form-input"
+        required
+      />
     </div>
-<a href="#" class="payment-button-orange" target="_blank">ЗНИЖКА 90%</a>
+    <button
+      type="submit"
+      id="submit-button"
+      class="payment-button-input"
+      disabled
+    >
+      ЗНИЖКА 90%
+    </button>
   </form>
 </section>
+
 
 <!-- Остання секція Footer -->
 
@@ -417,6 +437,39 @@
   });
 });
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("discount-form");
+  const submitButton = document.getElementById("submit-button");
+  const inputs = form.querySelectorAll("input");
+
+  // Функція перевірки заповненості всіх полів
+  const checkInputs = () => {
+    let allFilled = true;
+    inputs.forEach((input) => {
+      if (input.value.trim() === "") {
+        allFilled = false;
+      }
+    });
+    submitButton.disabled = !allFilled; // Активуємо або деактивуємо кнопку
+  };
+
+  // Додаємо обробники подій для кожного інпуту
+  inputs.forEach((input) => {
+    input.addEventListener("input", checkInputs);
+  });
+
+  // Обробка відправлення форми
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Забороняємо перезавантаження сторінки
+    alert("Форма успішно відправлена!");
+  });
+});
+
+    </script>
+
+    
  
 
   </body>
