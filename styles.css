@@ -194,10 +194,65 @@ body {
   }
 }
 
+.curs-name-title {
+  color: #0866ff;
+  font-family: "Pattaya";
+  font-size: 120px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0; /* Початкова прозорість */
+  transform: translateY(20px); /* Початкове положення (знизу) */
+  animation: fadeInUp 2s ease-out forwards; /* Анімація появи */
+  animation-delay: 0.5s; /* Затримка перед стартом */
+}
+
+@media (max-width: 1440px) {
+  .curs-name-title {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .curs-name-title {
+    font-size: 94px;
+  }
+}
+
+@media (max-width: 992px) {
+  .curs-name-title {
+    font-size: 76px;
+  }
+}
+
+@media (max-width: 768px) {
+  .curs-name-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .curs-name-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curs-name-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  .curs-name-title {
+    font-size: 30px;
+  }
+}
+
 .curs-name {
   color: #0866ff;
   font-family: "Pattaya";
-  font-size: 64px;
+  font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
@@ -220,49 +275,49 @@ body {
 
 @media (max-width: 1440px) {
   .curs-name {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 
 @media (max-width: 1200px) {
   .curs-name {
-    font-size: 54px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name {
-    font-size: 46px;
+    font-size: 78px;
   }
 }
 
 @media (max-width: 768px) {
   .curs-name {
-    font-size: 33px;
+    font-size: 56px;
   }
 }
 
 @media (max-width: 576px) {
   .curs-name {
-    font-size: 26px;
+    font-size: 46px;
   }
 }
 
 @media (max-width: 480px) {
   .curs-name {
-    font-size: 18px;
+    font-size: 28px;
   }
 }
 
 @media (max-width: 320px) {
   .curs-name {
-    font-size: 16px;
+    font-size: 28px;
   }
 }
 
 .curs-name-second {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 52px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 37px;
@@ -295,7 +350,7 @@ body {
 
 @media (max-width: 1440px) {
   .curs-name-second {
-    font-size: 38px;
+    font-size: 46px;
   }
 }
 
@@ -313,7 +368,7 @@ body {
 
 @media (max-width: 768px) {
   .curs-name-second {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -325,13 +380,13 @@ body {
 
 @media (max-width: 480px) {
   .curs-name-second {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 320px) {
   .curs-name-second {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -526,7 +581,7 @@ body {
   border: 1px solid #ffffff; /* Біла рамка */
   color: #ffffff;
   border-radius: 5px;
-  width: 550px; /* Трохи зменшена ширина */
+  max-width: 90%; /* Трохи зменшена ширина */
   margin: 0 auto; /* Центрування таймера */
   text-align: center; /* Центрування тексту */
   padding: 20px;
@@ -534,7 +589,7 @@ body {
 
 .time-text {
   font-family: "Aldrich";
-  font-size: 24px;
+  font-size: 54px;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 0;
@@ -542,49 +597,49 @@ body {
 
 @media (max-width: 1440px) {
   .time-text {
-    font-size: 24px;
+    font-size: 50px;
   }
 }
 
 @media (max-width: 1200px) {
   .time-text {
-    font-size: 22px;
+    font-size: 46px;
   }
 }
 
 @media (max-width: 992px) {
   .time-text {
-    font-size: 20px;
+    font-size: 42px;
   }
 }
 
 @media (max-width: 768px) {
   .time-text {
-    font-size: 18px;
+    font-size: 38px;
   }
 }
 
 @media (max-width: 576px) {
   .time-text {
-    font-size: 16px;
+    font-size: 34px;
   }
 }
 
 @media (max-width: 480px) {
   .time-text {
-    font-size: 14px;
+    font-size: 28px;
   }
 }
 
 @media (max-width: 320px) {
   .time-text {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
 .timer {
   font-family: "Aldrich";
-  font-size: 24px;
+  font-size: 54px;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin-bottom: 20px; /* Відступ між таймером і кнопкою */
@@ -592,43 +647,43 @@ body {
 
 @media (max-width: 1440px) {
   .timer {
-    font-size: 23px;
+    font-size: 48px;
   }
 }
 
 @media (max-width: 1200px) {
   .timer {
-    font-size: 22px;
+    font-size: 44px;
   }
 }
 
 @media (max-width: 992px) {
   .timer {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .timer {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 576px) {
   .timer {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 480px) {
   .timer {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 320px) {
   .timer {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -637,16 +692,41 @@ body {
   padding: 15px 0;
   background-color: #ffa500;
   color: #333333;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
-  width: 300px; /* Ширина кнопки відповідає ширині таймера */
+  max-width: 60%; /* Ширина кнопки відповідає ширині таймера */
   margin: 0 auto; /* Центрування кнопки */
   transition: background-color 0.3s;
+}
+
+@media (max-width: 992px) {
+  .payment-button {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment-button {
+    padding: 34px auto;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .payment-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-button {
+    font-size: 10px;
+  }
 }
 
 .payment-button:hover {
@@ -672,13 +752,6 @@ body {
   /* Стилі для напівпрозорої рамки з таймером */
   .promotion-timer-box {
     padding: 16px;
-    width: 420px; /* Трохи зменшена ширина */
-  }
-
-  .payment-button {
-    padding: 34px auto;
-    font-size: 16px;
-    width: 260px; /* Ширина кнопки відповідає ширині таймера */
   }
 
   .payment-button:hover {
@@ -703,14 +776,12 @@ body {
 
   /* Стилі для напівпрозорої рамки з таймером */
   .promotion-timer-box {
-    width: 230px; /* Трохи зменшена ширина */
     padding: 10px;
   }
 
-  .payment-button {
+  /* .payment-button {
     font-size: 12px;
     width: 180px; /* Ширина кнопки відповідає ширині таймера */
-  }
 }
 
 /* друга секція ЩО ВИ ОТРИМАЄТЕ ВІД КУРСУ? */
@@ -769,6 +840,7 @@ body {
   font-weight: 400; /* Regular */
   margin-bottom: 30px;
   margin-top: 0;
+  text-align: center;
 }
 
 @media (max-width: 1440px) {
@@ -826,9 +898,10 @@ body {
   gap: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .course-benefits {
     gap: 20px;
+    padding: 0 20px;
     display: inline-block;
   }
 }
@@ -860,7 +933,7 @@ body {
 
 @media (max-width: 992px) {
   .benefit {
-    max-width: 230px;
+    max-width: 100%;
     padding: 15px;
     margin-bottom: 27px;
   }
@@ -868,7 +941,7 @@ body {
 
 @media (max-width: 768px) {
   .benefit {
-    max-width: 80%;
+    max-width: 100%;
     margin-bottom: 26px;
     border-radius: 5px;
     display: inline-block;
@@ -879,7 +952,7 @@ body {
 
 @media (max-width: 576px) {
   .benefit {
-    max-width: 80%;
+    max-width: 100%;
     margin-bottom: 25px;
     border-radius: 5px;
     display: inline-block;
@@ -890,7 +963,7 @@ body {
 
 @media (max-width: 480px) {
   .benefit {
-    max-width: 80%;
+    max-width: 100%;
     margin-bottom: 24px;
     border-radius: 5px;
     display: inline-block;
@@ -901,7 +974,7 @@ body {
 
 @media (max-width: 320px) {
   .benefit {
-    max-width: 80%;
+    max-width: 100%;
     margin-bottom: 23px;
     border-radius: 5px;
     display: inline-block;
@@ -929,7 +1002,7 @@ body {
 
 @media (max-width: 992px) {
   .benefit-icon {
-    width: 70px;
+    width: 100px;
   }
 }
 
@@ -961,62 +1034,55 @@ body {
   font-size: 24px;
   color: #333333;
   font-weight: 700; /* Bold */
-  height: 50px;
+
   margin-bottom: 24px;
   text-align: center;
 }
 
 @media (max-width: 1440px) {
   .benefit-title {
-    font-size: 20px;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 1200px) {
   .benefit-title {
-    font-size: 16px;
     margin-bottom: 16px;
   }
 }
 
 @media (max-width: 992px) {
   .benefit-title {
-    font-size: 14px;
     margin-bottom: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .benefit-title {
-    font-size: 24px;
     margin-bottom: 24px;
   }
 }
 
 @media (max-width: 576px) {
   .benefit-title {
-    font-size: 22px;
     margin-bottom: 22px;
   }
 }
 
 @media (max-width: 480px) {
   .benefit-title {
-    font-size: 14px;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 320px) {
   .benefit-title {
-    font-size: 12px;
     margin-bottom: 8px;
   }
 }
 
 .benefit-text {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400; /* Regular */
   color: #41496c;
   margin: 0 auto;
@@ -1026,7 +1092,7 @@ body {
   padding: 0 5px 10px;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .benefit-text {
     font-size: 18px;
     list-style-type: none;
@@ -1063,28 +1129,28 @@ body {
 
 @media (max-width: 480px) {
   .benefit-text {
-    font-size: 12px;
+    font-size: 24px;
     list-style-type: none;
   }
 }
 
 @media (max-width: 320px) {
   .benefit-text {
-    font-size: 10px;
+    font-size: 20px;
     list-style-type: none;
   }
-}
+} */
 
 .payment-button-orange {
   display: flex; /* Використовуємо Flexbox */
   justify-content: center; /* Горизонтальне вирівнювання */
   align-items: center; /* Вертикальне вирівнювання */
-  width: 360px;
+  max-width: 90%;
   height: 100px;
   margin: 0 auto;
   background-color: #ffa500;
   color: #333333;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold; /* Bold */
   border: none;
   border-radius: 5px;
@@ -1098,7 +1164,7 @@ body {
   background-color: #ff8c00;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .payment-button-orange {
     width: 340px;
     height: 90px;
@@ -1134,28 +1200,28 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .payment-button-orange {
     width: 260px;
     height: 50px;
     font-size: 14px;
     margin-bottom: 0;
   }
-}
+} */
 
 @media (max-width: 480px) {
   .payment-button-orange {
-    width: 240px;
-    height: 40px;
-    font-size: 13px;
+    max-width: 90%;
+    /* height: 40px; */
+    font-size: 18px;
   }
 }
 
 @media (max-width: 320px) {
   .payment-button-orange {
-    width: 220px;
-    height: 30px;
-    font-size: 12px;
+    max-width: 90%;
+    /* height: 30px; */
+    font-size: 16px;
     margin-bottom: 0;
   }
 }
@@ -1171,44 +1237,69 @@ body {
 }
 
 .about-me-card {
-  display: flex;
+  display: block;
   flex-direction: row; /* Розташування фото та тексту в один ряд */
-  align-items: flex-start;
+  align-items: flex-end;
   border: 2px solid #ffffff;
   border-radius: 10px;
   padding: 20px;
   background-color: #ffffff;
   gap: 20px; /* Відстань між текстом і фото */
-  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .about-me-card {
+    display: block;
+  }
 }
 
 .about-me-photo-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; /* Центруємо контент всередині контейнера */
-  width: 40%; /* Контейнер для фото займає 40% ширини картки */
-  gap: 15px; /* Відстань між фото та кнопкою */
+  max-width: 100%; /* Контейнер для фото займає 40% ширини картки */
+  /* Відстань між фото та кнопкою */
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .about-me-photo-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about-me-photo {
-  width: 100%; /* Фото займає всю ширину контейнера */
+  max-width: 60%; /* Фото займає всю ширину контейнера */
   border-radius: 4px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .about-me-photo {
+    max-width: 100%;
+  }
 }
 
 .about-me-content {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: row; */
   gap: 10px;
   text-align: center;
-  width: 60%; /* Контент займає 60% ширини картки */
+  width: 100%; /* Контент займає 60% ширини картки */
 }
 
-
+@media (max-width: 992px) {
+  .about-me-content {
+    display: inline;
+    flex-direction: column;
+  }
+}
 
 .about-me-heading {
-  font-size: 36px;
+  font-size: 30px;
   color: #333333;
   font-weight: 700;
   margin: 0;
@@ -1216,52 +1307,45 @@ body {
 
 @media (max-width: 1440px) {
   .about-me-heading {
-  font-size: 34px;
+    font-size: 24px;
+  }
 }
-}
-
 
 @media (max-width: 1200px) {
-    .about-me-heading {
-  font-size: 30px;
+  .about-me-heading {
+    font-size: 20px;
+  }
 }
-}
-
 
 @media (max-width: 992px) {
-    .about-me-heading {
-  font-size: 22px;
+  .about-me-heading {
+    font-size: 40px;
+  }
 }
-}
-
 
 @media (max-width: 768px) {
-    .about-me-heading {
-  font-size: 17px;
+  .about-me-heading {
+    font-size: 28px;
+  }
 }
-}
-
 
 @media (max-width: 576px) {
-    .about-me-heading {
-  font-size: 14px;
+  .about-me-heading {
+    font-size: 24px;
+  }
 }
-}
-
 
 @media (max-width: 480px) {
-    .about-me-heading {
-  font-size: 9px;
+  .about-me-heading {
+    font-size: 14px;
+  }
 }
-}
-
 
 @media (max-width: 320px) {
-    .about-me-heading {
-  font-size: 8px;
+  .about-me-heading {
+    font-size: 14px;
+  }
 }
-}
-
 
 .about-me-subtitle {
   font-size: 30px;
@@ -1271,30 +1355,21 @@ body {
   text-align: left;
 }
 
-.about-me-bold {
-  font-weight: bold;
-  font-size: 20px;
+.about-me-title-container {
+  font-size: 24px;
   color: #666666;
-}
 
-.about-me-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 18px;
-  color: #666666;
-}
-
-.about-me-list li,
-ul {
-  margin: 0;
   text-align: left;
+}
+
+.about-me-title-container li {
+  margin-bottom: 30px;
 }
 
 .about-me-paragraph {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 24px;
   color: #666666;
 }
 
@@ -1366,21 +1441,22 @@ ul {
 }
 
 .payment-button-blue {
-  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
   height: 100px;
-  display: inline-flex; /* Використовуємо flexbox для вирівнювання */
-  justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центрування по вертикалі */
-  text-align: center;
+  margin: 0 auto;
   background-color: #0866ff;
   color: #ffffff;
-  text-decoration: none;
-  padding: 15px 30px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .payment-button-blue:hover {
