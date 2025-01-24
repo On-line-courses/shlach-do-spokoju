@@ -1893,7 +1893,7 @@ body {
 }
 
 .faq-section h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -1949,18 +1949,14 @@ body {
   }
 
   .faq-section h2 {
-    font-size: 44px;
+    
     padding-top: 0;
     margin-bottom: 30px;
   }
 
-  .faq-question {
-    font-size: 20px;
-  }
 
-  .faq-answer {
-    font-size: 20px;
-  }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1969,18 +1965,13 @@ body {
   }
 
   .faq-section h2 {
-    font-size: 18px;
+   
     margin-bottom: 20px;
     padding-top: 0;
   }
 
-  .faq-question {
-    font-size: 18px;
-  }
+ 
 
-  .faq-answer {
-    font-size: 16px;
-  }
 }
 
 /* восьма секція Збір емейлів */
@@ -1995,7 +1986,7 @@ body {
 }
 
 .discount-section h2 {
-  font-size: 36px;
+  font-size: 30px;
   color: #ffffff; /* Темний текст */
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -2029,7 +2020,7 @@ body {
 
 @media (max-width: 768px) {
   .discount-section h2 {
-    font-size: 44px;
+    
     margin-bottom: 30px;
     margin-top: 30px;
   }
@@ -2049,7 +2040,7 @@ body {
   }
 
   .discount-section h2 {
-    font-size: 18px;
+   
     margin-bottom: 20px;
     margin-top: 0;
   }
