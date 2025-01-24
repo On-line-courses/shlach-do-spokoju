@@ -1410,11 +1410,8 @@ body {
 @media (max-width: 768px) {
   .course-cards {
     display: inline-block;
-    
   }
 }
-
-
 
 .card {
   background-color: #f4f4f4; /* Transparent to show section's bg */
@@ -1447,10 +1444,8 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    
     height: 100%;
     margin-bottom: 20px;
-    
   }
 }
 
@@ -1495,12 +1490,10 @@ body {
 }
 
 @media (max-width: 768px) {
-.payment-button-blue-container {
+  .payment-button-blue-container {
     margin-top: 20px;
-  } 
+  }
 }
-
- 
 
 .payment-button-blue {
   display: flex;
@@ -1652,7 +1645,7 @@ body {
   .course-advantages {
     padding: 40px;
     background-position: left 25% center; /* Зрушуємо до самого краю */
-    background-size: auto 100%; /* Покриваємо блок без обрізання */ 
+    background-size: auto 100%; /* Покриваємо блок без обрізання */
   }
 }
 
@@ -1660,11 +1653,9 @@ body {
   .course-advantages {
     padding: 40px;
     background-position: left 25% center; /* Додаємо невелике зміщення для видимості */
-    /* background-size: auto 100%; /* Ширина автоматична, але висота займає 100% */
-  /* } */
+/* background-size: auto 100%; /* Ширина автоматична, але висота займає 100% */
 /* } */
-
-
+/* } */
 
 .block-course-advantages {
   width: 50%;
@@ -1673,9 +1664,7 @@ body {
 
 @media (max-width: 992px) {
   .block-course-advantages {
-width: 100%;
-
-
+    width: 100%;
   }
 }
 
@@ -1700,26 +1689,21 @@ width: 100%;
   border-radius: 10px;
 }
 
-
-
 .text-course-advantages li {
   margin-bottom: 10px;
 }
-
-
-
 
 /* @media (max-width: 768px) {
   .course-advantages {
     background: url("images/obPz-nBu-HS7PExmh9b-O.jpg") no-repeat center
       center/cover; /* Можна використовувати інше фонове зображення */
-    /* padding-top: 30px; Зменшення відступів */
-    /* padding-bottom: 30px;
+/* padding-top: 30px; Зменшення відступів */
+/* padding-bottom: 30px;
   }
 
   .block-course-advantages {
     margin: 0 30px 0 auto; Відступ зверху 98px, праворуч 69px */
-  /* }
+/* }
 
   .block-course-advantages h2 {
     font-size: 44px;
@@ -1740,10 +1724,10 @@ width: 100%;
 
   .block-course-advantages {
     margin: 0 20px 0 auto; Відступ зверху 98px, праворуч 69px */
-    /* width: 100%;
+/* width: 100%;
   } */
 
-  /* .block-course-advantages h2 {
+/* .block-course-advantages h2 {
     font-size: 18px;
     margin-bottom: 20px;
   }
@@ -1751,7 +1735,7 @@ width: 100%;
   .text-course-advantages {
     font-size: 12px;
   } */
-/* } */ 
+/* } */
 
 /* шоста секція Відгуки */
 
@@ -1762,7 +1746,7 @@ width: 100%;
 }
 
 .reviews-section h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   color: #ffffff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -1774,6 +1758,39 @@ width: 100%;
   justify-content: space-between;
   gap: 20px;
   padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap; /* Додаємо можливість переносу елементів */
+    justify-content: space-between; /* Простір між елементами */
+    gap: 20px; /* Відстань між елементами */
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+
+  .reviews-container .review-box {
+    flex: 0 1 calc(50% - 20px); /* Кожна форма займає 50% ширини мінус gap */
+    box-sizing: border-box; /* Враховує padding і border у ширині */
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap; /* Додаємо можливість переносу елементів */
+    justify-content: center; /* Центруємо форми */
+    gap: 20px; /* Відстань між елементами */
+    padding: 0 20px; /* Зменшуємо відступи */
+    margin-bottom: 20px;
+  }
+
+  .reviews-container .review-box {
+    flex: 0 1 100%; /* Кожна форма займає 100% ширини */
+    box-sizing: border-box; /* Враховує padding і border у ширині */
+  }
 }
 
 .review-box {
@@ -1781,7 +1798,7 @@ width: 100%;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
-  margin-bottom: 60px;
+
 }
 
 .review-box img {
@@ -1815,18 +1832,18 @@ width: 100%;
   }
 
   .reviews-section h2 {
-    font-size: 44px;
+    /* font-size: 44px; */
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
-  .reviews-container {
+  /* .reviews-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
-    justify-content: space-between;
+  /* justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
-  }
+  }  */
 
   .review-box.blue {
     margin-bottom: 0;
@@ -1844,22 +1861,18 @@ width: 100%;
   }
 
   .reviews-section h2 {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-bottom: 20px;
   }
 
-  .reviews-container {
+  /* .reviews-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 
-  .review-box {
+  /* .review-box {
     margin-bottom: 20px;
-  }
-
-  .review-box p {
-    font-size: 14px;
-  }
+  } */
 
   /* Центрування кнопки */
   /* .payment-button-blue {
