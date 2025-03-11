@@ -13,7 +13,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: #333333;
+  background-color: #cee2f7;
 }
 
 /* Нормалізуємо відступи для заголовків і тексту */
@@ -28,9 +28,15 @@ body {
   margin-bottom: 8px; /* Додатковий відступ між пунктами списку */
 }
 
+.button-liqpay {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  
+}
 /* Верхній темний сектор */
 .header {
-  background-color: #333333; /* Темний фон */
+  background-color: #cee2f7; /* Темний фон */
   height: 110px; /* Висота секції */
   width: 100%;
   position: relative; /* Для правильного позиціонування дочірніх елементів */
@@ -195,9 +201,9 @@ body {
 }
 
 .curs-name-title {
-  color: #0866ff;
-  font-family: "Pattaya";
-  font-size: 120px;
+  color: #004aad;
+ 
+  font-size: 80px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
@@ -205,29 +211,31 @@ body {
   transform: translateY(20px); /* Початкове положення (знизу) */
   animation: fadeInUp 2s ease-out forwards; /* Анімація появи */
   animation-delay: 0.5s; /* Затримка перед стартом */
+  text-align: left;
+  margin-left: 20px;
 }
 
 @media (max-width: 1440px) {
   .curs-name-title {
-    font-size: 120px;
+    font-size: 80px;
   }
 }
 
 @media (max-width: 1200px) {
   .curs-name-title {
-    font-size: 94px;
+    font-size: 80px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name-title {
-    font-size: 76px;
+    font-size: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .curs-name-title {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -239,19 +247,19 @@ body {
 
 @media (max-width: 480px) {
   .curs-name-title {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .curs-name-title {
     font-size: 30px;
-  }
-}
+  } */
+/* } */
 
 .curs-name {
-  color: #0866ff;
-  font-family: "Pattaya";
+  color: #004aad;
+  
   font-size: 60px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
@@ -316,8 +324,8 @@ body {
 }
 
 .curs-name-second {
-  color: #ffffff;
-  font-size: 52px;
+  color: #cee2f7;
+  font-size: 38px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 37px;
@@ -325,6 +333,8 @@ body {
   white-space: nowrap; /* Текст в один рядок */
   /* border-right: 2px solid #ffffff; Імітація курсора */
   animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite; /* Анімації */
+    text-align: left;
+  margin-left: 20px;
 }
 
 /* Анімація друку тексту */
@@ -350,31 +360,31 @@ body {
 
 @media (max-width: 1440px) {
   .curs-name-second {
-    font-size: 46px;
+    font-size: 38px;
   }
 }
 
 @media (max-width: 1200px) {
   .curs-name-second {
-    font-size: 36px;
+    font-size: 38px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name-second {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 768px) {
   .curs-name-second {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 576px) {
   .curs-name-second {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
@@ -386,7 +396,7 @@ body {
 
 @media (max-width: 320px) {
   .curs-name-second {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -398,71 +408,72 @@ body {
 }
 
 .text-standart-prise {
-  color: #ffffff;
-  font-size: 52px;
+  color: #cbdf93;
+  font-size: 70px;
+  font-weight: bold;
   text-align: left;
-  padding-left: 50px;
+  padding-left: 80px;
   margin-bottom: 0;
 }
 
 @media (max-width: 1440px) {
   .text-standart-prise {
-    font-size: 42px;
+    font-size: 70px;
     padding-left: 50px;
   }
 }
 
 @media (max-width: 1200px) {
   .text-standart-prise {
-    font-size: 34px;
+    font-size: 60px;
     padding-left: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .text-standart-prise {
-    font-size: 28px;
+    font-size: 50px;
     padding-left: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .text-standart-prise {
-    font-size: 22px;
+    font-size: 40px;
     padding-left: 40px;
   }
 }
 
 @media (max-width: 576px) {
   .text-standart-prise {
-    font-size: 18px;
+    font-size: 30px;
     padding-left: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .text-standart-prise {
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 20px;
   }
 }
 
 @media (max-width: 320px) {
   .text-standart-prise {
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 20px;
   }
 }
 
 .text-sale-prise {
-  color: #ffa500;
-  font-size: 89px;
+  color: #cbdf93;
+  font-size: 71px;
   font-weight: bold;
   text-align: left;
-  -webkit-text-stroke: 2px #333333; /* Обводка: 2px чорна */
+ 
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 50px;
+  padding-left: 80px;
 }
 
 @media (max-width: 1440px) {
@@ -1232,7 +1243,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 20px 20px 20px;
-  background-color: #333333;
+  background-color: #cee2f7;
   width: 100%;
 }
 
@@ -1386,7 +1397,7 @@ body {
 /* четверта секція ЦЕЙ КУРС ДЛЯ ВАС, ЯКЩО ВИ:*/
 
 .course-section-cards {
-  background-color: #333333; /* Background color for the section */
+  background-color: #cee2f7; /* Background color for the section */
   padding: 20px 20px 40px;
   text-align: center;
 }
@@ -1502,7 +1513,7 @@ body {
   max-width: 90%;
   height: 100px;
   margin: 0 auto;
-  background-color: #0866ff;
+  background-color: #efa79b;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
@@ -1813,13 +1824,13 @@ body {
 }
 
 .review-box.blue {
-  background-color: #0866ff;
+  background-color: #efa79b;
   color: #ffffff;
 }
 
 .review-box.gray {
-  background-color: #d9d9d9;
-  color: #333333;
+  background-color: #efa79b;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -2101,7 +2112,8 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: #333333; /* Колір фону */
+  background-color: #cee2f7;
+; /* Колір фону */
   height: 150px; /* Висота секції */
   display: flex; /* Використовуємо Flexbox для розташування елементів */
   justify-content: center; /* Центруємо вміст по горизонталі */
@@ -2111,12 +2123,12 @@ body {
 .footer-icons {
   display: flex; /* Встановлюємо flex-контейнер для іконок */
   justify-content: space-between; /* Відстань між елементами */
-  width: 275px; /* Ширина контейнера для іконок */
+  width: 275px; 
 }
 
 .social-icon img {
-  width: 50px; /* Розмір іконок */
-  height: auto; /* Збереження пропорцій */
+  width: 50px; 
+  height: auto; 
 }
 
 /* Адаптивність */
