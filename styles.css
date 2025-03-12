@@ -293,9 +293,9 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .curs-name {
-    font-size: 78px;
+    font-size: 40px;
   }
 }
 
@@ -309,7 +309,7 @@ body {
   .curs-name {
     font-size: 46px;
   }
-}
+} */
 
 @media (max-width: 480px) {
   .curs-name {
@@ -845,14 +845,14 @@ body {
   }
 }
 
-.course-section h2 {
+/* .course-section h2 {
   font-size: 30px;
   color: #ffffff;
   font-weight: 400; /* Regular */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px;
   margin-top: 0;
-  text-align: center;
-}
+  text-align: center; */
+/* } */ 
 
 /* @media (max-width: 1440px) {
   .course-section h2 {
@@ -1251,10 +1251,10 @@ body {
   display: block;
   flex-direction: row; /* Розташування фото та тексту в один ряд */
   align-items: flex-end;
-  border: 2px solid #ffffff;
+ 
   border-radius: 10px;
   padding: 20px;
-  background-color: #ffffff;
+  
   gap: 20px; /* Відстань між текстом і фото */
   max-width: 100%;
 }
@@ -2151,3 +2151,10 @@ body {
     width: 40px; /* Розмір іконок */
   }
 }
+
+.footer-content {
+  text-align: center;
+  margin-top: 200px; /* Відступ від попередньої секції */
+  padding-top: 20px; /* Додатковий внутрішній відступ зверху */
+}
+
