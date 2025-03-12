@@ -58,7 +58,7 @@ body {
 .header-title {
   font-size: 36px; /* Розмір шрифту */
   font-weight: 400;
-  color: #ffffff; /* Білий колір тексту */
+  color: #004aad; /* Білий колір тексту */
   text-align: start; /* Центрування тексту */
 }
 
@@ -201,10 +201,10 @@ body {
 }
 
 .curs-name-title {
-  color: #004aad;
+  color: #f4f4f4;
  
   font-size: 60px;
-  text-shadow: 2px 2px 5px rgba(168, 175, 229, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
+  /* text-shadow: 2px 2px 5px rgba(15, 40, 231, 0.5); Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
   opacity: 0; /* Початкова прозорість */
@@ -2136,16 +2136,7 @@ body {
 }
 
 /* Адаптивність */
-@media (max-width: 768px) {
-  .footer {
-    height: 100px; /* Висота секції */
-  }
-}
 
-@media (max-width: 480px) {
-  .footer {
-    height: 80px; /* Висота секції */
-  }
 
   .footer-icons {
     width: 200px; /* Ширина контейнера для іконок */
@@ -2154,7 +2145,7 @@ body {
   .social-icon img {
     width: 40px; /* Розмір іконок */
   }
-}
+
 
 .footer-content {
   text-align: center;
