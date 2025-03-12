@@ -203,8 +203,8 @@ body {
 .curs-name-title {
   color: #004aad;
  
-  font-size: 80px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
+  font-size: 60px;
+  text-shadow: 2px 2px 5px rgba(168, 175, 229, 0.5); /* Тінь: зміщення 2px, розмиття 5px, колір чорний з прозорістю */
   margin-top: 0;
   margin-bottom: 0;
   opacity: 0; /* Початкова прозорість */
@@ -215,23 +215,31 @@ body {
   margin-left: 20px;
 }
 
-@media (max-width: 1440px) {
-  .curs-name-title {
-    font-size: 80px;
-  }
-}
-
 @media (max-width: 1200px) {
   .curs-name-title {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 992px) {
   .curs-name-title {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
+@media (max-width: 480px) {
+  .curs-name-title {
+    font-size: 20px;
+  }
+}
+/* @media (max-width: 1440px) {
+  .curs-name-title {
+    font-size: 80px;
+  }
+}
+
+
+
+
 
 @media (max-width: 768px) {
   .curs-name-title {
@@ -245,11 +253,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .curs-name-title {
-    font-size: 28px;
-  }
-}
+
 
 /* @media (max-width: 320px) {
   .curs-name-title {
