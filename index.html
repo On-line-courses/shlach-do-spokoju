@@ -37,11 +37,12 @@
     <div class="container-left">
       <p class="text-standart-prise"><del style="color: #e82929;">1499.00 грн</del></p>
       <p class="text-sale-prise">ЗНИЖКА 70%</p>
+         </div>
       <!-- <p class="sale-prise"></p> -->
       
       <!-- Напівпрозора рамка з текстом і таймером -->
       
-      </div>
+   
       
      <div class="promotion-timer-box">
         <p class="time-text">До кінця акції</p>
@@ -443,11 +444,20 @@
   <p class="curs-name">💡 Настав час діяти!</p>
   <p class="benefit-text">🔹 Заберіть свій доступ зараз</p>
   <p class="benefit-text">🔹 Почніть свій шлях до життя без паніки</p>
-  <a href="https://westudy.ua/Slach_do_spokoju/course/enroll/eed9bfc6-2c23-45e9-8fba-f78e34a597b8" target="_blank">
+<div class="promotion-timer-box">
+        <p class="time-text">До кінця акції</p>
+        <div class="timer">
+          <span id="days">00</span> днів
+          <span id="hours">00</span> г:
+          <span id="minutes">00</span> хв:
+          <span id="seconds">00</span> сек
+        </div>
+<a href="https://westudy.ua/Slach_do_spokoju/course/enroll/eed9bfc6-2c23-45e9-8fba-f78e34a597b8" target="_blank">
   <button style="background-color: #e87229; color: white; padding: 30px 40px; border: none; border-radius: 50px; cursor: pointer; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;">
     ЗАПИСАТИСЯ НА КУРС
   </button>
 </a>
+  </div>
   </div>
 
 
@@ -468,34 +478,35 @@
 </footer>
 
     <script>
-      // Countdown Timer
-      const countdownDate = new Date("2025-03-17T23:59:00").getTime();
+  // Встановлюємо дату закінчення акції
+  const countdownDate = new Date("2025-03-17T23:59:00").getTime();
 
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("days").textContent = days;
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
+    // Оновлюємо всі таймери на сторінці
+    document.querySelectorAll("#days").forEach(el => el.textContent = days);
+    document.querySelectorAll("#hours").forEach(el => el.textContent = hours);
+    document.querySelectorAll("#minutes").forEach(el => el.textContent = minutes);
+    document.querySelectorAll("#seconds").forEach(el => el.textContent = seconds);
 
-        if (distance < 0) {
-          clearInterval(timerInterval);
-          document.getElementById("countdown").innerHTML =
-            "The course has started!";
-        }
-      }
+    // Якщо час вийшов - показуємо повідомлення
+    if (distance < 0) {
+      clearInterval(timerInterval);
+      document.querySelectorAll(".timer").forEach(el => el.innerHTML = "Акція завершена!");
+    }
+  }
 
-      const timerInterval = setInterval(updateCountdown, 1000);
-    </script>
+  // Оновлення таймера кожну секунду
+  const timerInterval = setInterval(updateCountdown, 1000);
+</script>
+
     <script>
    document.querySelectorAll('.faq-question').forEach(button => {
   button.addEventListener('click', () => {
