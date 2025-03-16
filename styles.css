@@ -592,13 +592,13 @@ body {
 /* Стилі для напівпрозорої рамки з таймером */
 .promotion-timer-box {
   position: relative;
-  background-color: rgba(185, 183, 183, 0.5); /* Напівпрозорий фон */
-  border: 1px solid #ffffff; /* Біла рамка */
+  background-color: rgba(185, 183, 183, 0.5); 
+  border: 1px solid #ffffff; 
   color: #ffffff;
   border-radius: 5px;
-  max-width: 90%; /* Трохи зменшена ширина */
-  margin: 0 auto; /* Центрування таймера */
-  text-align: center; /* Центрування тексту */
+  max-width: 90%; 
+  margin: 0 auto; 
+  text-align: center; 
   padding: 20px;
 }
 
@@ -2115,41 +2115,41 @@ body {
 }
 
 /* Footer Styles */
-.footer {
+/* .footer {
   background-color: #cee2f7;
 ; /* Колір фону */
   /* height: 150px; Висота секції */
-  display: flex; /* Використовуємо Flexbox для розташування елементів */
-  justify-content: center; /* Центруємо вміст по горизонталі */
-  align-items: center; /* Центруємо вміст по вертикалі */
-}
+  /* display: flex; /* Використовуємо Flexbox для розташування елементів */
+  /* justify-content: center; 
+  align-items: center; 
+} */
 
-.footer-icons {
-  display: flex; /* Встановлюємо flex-контейнер для іконок */
-  justify-content: space-between; /* Відстань між елементами */
+/* .footer-icons {
+  display: flex; 
+  justify-content: space-between; 
   width: 275px; 
 }
 
 .social-icon img {
   width: 50px; 
   height: auto; 
-}
+} */
 
 /* Адаптивність */
 
 
-  .footer-icons {
-    width: 200px; /* Ширина контейнера для іконок */
+  /* .footer-icons {
+    width: 200px; 
   }
 
   .social-icon img {
-    width: 40px; /* Розмір іконок */
-  }
+    width: 40px; 
+  } */
 
 
-.footer-content {
+/* .footer-content {
   text-align: center;
-  margin-top: 30px; /* Відступ від попередньої секції */
-  padding-top: 20px; /* Додатковий внутрішній відступ зверху */
-}
+  margin-top: 30px; 
+  padding-top: 20px;
+}  */
 
