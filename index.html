@@ -441,24 +441,62 @@
 
 <footer class="footer">
   <div class="footer-content">
-  <p class="curs-name">💡 Настав час діяти!</p>
-  <p class="benefit-text">🔹 Заберіть свій доступ зараз</p>
-  <p class="benefit-text">🔹 Почніть свій шлях до життя без паніки</p>
-<div class="promotion-timer-box">
-        <p class="time-text">До кінця акції</p>
-        <div class="timer">
-          <span id="days">00</span> днів
-          <span id="hours">00</span> г:
-          <span id="minutes">00</span> хв:
-          <span id="seconds">00</span> сек
-        </div>
-<a href="https://westudy.ua/Slach_do_spokoju/course/enroll/eed9bfc6-2c23-45e9-8fba-f78e34a597b8" target="_blank">
-  <button style="background-color: #e87229; color: white; padding: 30px 40px; border: none; border-radius: 50px; cursor: pointer; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;">
-    ЗАПИСАТИСЯ НА КУРС
-  </button>
-</a>
+    <p class="curs-name">💡 Настав час діяти!</p>
+    <p class="benefit-text">🔹 Заберіть свій доступ зараз</p>
+    <p class="benefit-text">🔹 Почніть свій шлях до життя без паніки</p>
+    
+    <div class="promotion-timer-box">
+      <p class="time-text">До кінця акції</p>
+      <div class="timer">
+        <span id="days">00</span> днів
+        <span id="hours">00</span> г:
+        <span id="minutes">00</span> хв:
+        <span id="seconds">00</span> сек
+      </div>
+      <a href="https://westudy.ua/Slach_do_spokoju/course/enroll/eed9bfc6-2c23-45e9-8fba-f78e34a597b8" target="_blank">
+        <button style="background-color: #e87229; color: white; padding: 30px 40px; border: none; border-radius: 50px; cursor: pointer; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: bold;">
+          ЗАПИСАТИСЯ НА КУРС
+        </button>
+      </a>
+    </div>
   </div>
+
+  <!-- Контейнер для офферу -->
+  <div class="offer-link-container">
+    <a href="offer.html" class="transparent-button">OFFER</a>
   </div>
+</footer>
+
+<style>
+  .footer {
+    position: relative; /* Додаємо для позиціонування кнопки */
+    padding-bottom: 40px; /* Додає простір перед посиланням */
+  }
+
+  .offer-link-container {
+    position: absolute;
+    bottom: 10px; /* Відстань від нижнього краю */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center; /* Вирівнює текст */
+  }
+
+  .transparent-button {
+    background: none;
+    border: none;
+    color: #004aad;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .transparent-button:hover {
+    color: #697c8d;
+  }
+</style>
 
 
   <!-- <div class="footer-icons">
@@ -475,8 +513,6 @@
       <img src="images/svg/email.svg" alt="LinkedIn">
     </a> -->
   <!-- </div> -->
-</footer>
-
     <script>
   // Встановлюємо дату закінчення акції
   const countdownDate = new Date("2025-03-17T23:59:00").getTime();
